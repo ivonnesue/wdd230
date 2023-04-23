@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,19 +7,20 @@
     <meta name="description" content="This is Ivonne's Assignment Portal for 
     WDD230 Web Front End Development I, at Brigham Young University - Idaho"> 
     <title>Assignment Portal of Ivonne Aponte</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header>
-        <img class="my-photo"
-        src="images/myphoto.jpg"
-        alt="Ivonne's picture">
-        <h1>Ivonne Aponte</h1>
+    <header>       
+            <img class="myphoto"
+            src="images/myphoto.jpg"
+            alt="Ivonne's picture">
+        <h1>Ivonne S. Aponte R.</h1>
     </header>
     <main>
         <section>
             <h2 id="pagetitle">WDD230: Assingment Portal</h2>
         </section>
-        <section>
+        <section id="lessons">
             <ul>
                 <li>
                     Week 1 JavaScript Activity: 
@@ -38,8 +40,8 @@
         </section>
     </main>
     <footer>
-        <h3>&copy 2023 | Ivonne Aponte | california </h3>
-        <p id="update">Last Updated: </p>
+        <h3>&copy;<span id="year"></span> | Ivonne Aponte | California</h3>
+        <p id="update">Last Updated: <br></p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,78 @@
+body {
+    /*background-color:#F2F2F0;*/
+
+    font-family: 'Roboto', arial, helvetica, sans-serif ;
+    font-weight: normal; 
+    font-size: 24px;
+    line-height: 1.5;
+    background-color: cornsilk;
+    }
+
+header, main, footer{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: #F2B705;
+    filter: drop-shadow(10px 10px 0 #D9325E );
+    border-radius: 10px;
+    height: 200px;
+    margin-bottom: 1%
+}
+
+header h1{
+    padding-left: 5%;
+    color:#030A8C;
+    text-align: right;
+    
+}
+header .myphoto{
+    max-width: 120px;
+    border-radius: 5px;
+    margin-left: 25%;
+    filter: drop-shadow(5px 5px 0 #D9325E );
+    
+}
+
+main{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#pagetitle{
+    color: #030A8C;
+    border-bottom: 2px dotted gray;
+}
+#lessons{
+    line-height: 2;
+    color:#D9325E ;
+}
+
+#lesson a:link {
+    text-decoration: none;
+    
+}
+
+footer{
+    display: grid;
+    grid-template-rows: 50px, 50px;
+    align-items: center;
+    line-height: 0;
+    color: #030A8C;
+    background-color: #F2B705;
+    filter: drop-shadow(10px 10px 0  #6379F2);
+    border-radius: 10px;
+    height: 120px;
+
+}
+
+footer h3{
+    text-align: center;
+}
+
+footer #update{
+    text-align: center;
+
+}
