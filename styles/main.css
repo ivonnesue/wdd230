@@ -37,8 +37,9 @@ header .myphoto{
 }
 
 main{
-    margin-left: 15%;
-    margin-right: 15%;
+
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 #pagetitle{
@@ -57,14 +58,14 @@ main{
 
 footer{
     display: grid;
-    grid-template-rows: 50px, 50px;
+    grid-template-rows: 3 1fr;
     align-items: center;
     line-height: 0;
     color: #030A8C;
     background-color: #F2B705;
     filter: drop-shadow(10px 10px 0  #6379F2);
     border-radius: 10px;
-    height: 120px;
+    height: 150px;
 
 }
 
@@ -72,7 +73,8 @@ footer h3{
     text-align: center;
 }
 
-footer #update{
+
+footer p, #updated{
     text-align: center;
 
 }
