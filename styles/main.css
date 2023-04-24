@@ -9,10 +9,10 @@ body {
     }
 
 header, main, footer{
-    margin: 0 auto;
     max-width: 1280px;
 }
 header{
+    margin: 0 auto;
     display: flex;
     align-items: center;
     background-color: #F2B705;
@@ -37,7 +37,7 @@ header .myphoto{
 }
 
 main{
-
+    margin: 0 auto;
     margin-left: 25%;
     margin-right: 25%;
 }
@@ -57,6 +57,7 @@ main{
 }
 
 footer{
+    margin: 0 auto;
     display: grid;
     grid-template-rows: 3 1fr;
     align-items: center;
