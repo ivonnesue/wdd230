@@ -1,7 +1,7 @@
 body {
     /*background-color:#F2F2F0;*/
 
-    font-family: 'Roboto', arial, helvetica, sans-serif ;
+    font-family: 'Roboto', 'Roboto slab', arial, helvetica, sans-serif ;
     font-weight: normal; 
     font-size: 24px;
     line-height: 1.5;
@@ -47,6 +47,7 @@ main{
     border-bottom: 2px dotted gray;
 }
 #lessons{
+    font-family: 'Roboto Slab', serif;;
     line-height: 2;
     color:#D9325E ;
 }
@@ -76,6 +77,7 @@ footer h3{
 
 
 footer p, #updated{
+    font-family: 'Roboto Slab', serif;
     text-align: center;
 
 }
