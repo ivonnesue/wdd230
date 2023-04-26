@@ -50,10 +50,13 @@ main{
     /*margin-bottom: 38px;*/
     font-family: 'Roboto Slab', serif;;
     line-height: 2;
-    color:#D9325E ;
+    color:#030A8C ;
 }
 
-#lesson a:link {
+a{
+    color:#D9325E;
+}
+a:link {
     text-decoration: none;
     
 }
