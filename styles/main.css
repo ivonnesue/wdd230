@@ -44,8 +44,12 @@ main{
 
 #pagetitle{
     color: #030A8C;
+    margin-bottom: 18px;
 }
 
+hr{
+    margin: 0;
+}
 #lessons{
     /*margin-bottom: 38px;*/
     font-family: 'Roboto Slab', serif;;
