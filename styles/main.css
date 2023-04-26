@@ -43,9 +43,14 @@ main{
 }
 
 #pagetitle{
+    margin-top: 42px;
+    margin-bottom: 24px;
+    border: 10px;
     color: #030A8C;
-    border-bottom: 2px dotted gray;
+    
+
 }
+
 #lessons{
     font-family: 'Roboto Slab', serif;;
     line-height: 2;
