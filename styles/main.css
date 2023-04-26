@@ -19,7 +19,7 @@ header{
     filter: drop-shadow(10px 10px 0 #D9325E );
     border-radius: 10px;
     height: 200px;
-    margin-bottom: 1%
+    /*margin-bottom: 1%*/
 }
 
 header h1{
@@ -38,20 +38,16 @@ header .myphoto{
 
 main{
     margin: 0 auto;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: 42px 25% 38px 25%
+    
 }
 
 #pagetitle{
-    margin-top: 42px;
-    margin-bottom: 24px;
-    border: 10px;
     color: #030A8C;
-    
-
 }
 
 #lessons{
+    /*margin-bottom: 38px;*/
     font-family: 'Roboto Slab', serif;;
     line-height: 2;
     color:#D9325E ;
