@@ -1,49 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
 body {
     /*background-color:#F2F2F0;*/
-
+    position: relative;
     font-family: 'Roboto', 'Roboto slab', arial, helvetica, sans-serif ;
     font-weight: normal; 
-    font-size: 24px;
+    
     line-height: 1.5;
     background-color: cornsilk;
+    min-height: 100vh;
+
     }
 
-header, main, footer{
-    max-width: 1280px;
+header, main{
+    max-width: 95%;
 }
 header{
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     display: flex;
-    column-gap: 3%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #F2B705;
-    filter: drop-shadow(10px 10px 0 #D9325E );
+    filter: drop-shadow(10px 10px 2px #D9325E );
     border-radius: 10px;
-    height: 200px;
+    height: auto;
  
 }
 
 header h1{
+    
     color:#030A8C;
     text-align: center;
     
 }
 header .myphoto{
-    width: 130px;
+    padding-top: 5%;
+    width: 20%;
     border-radius: 5px;
-    filter: drop-shadow(5px 5px 0 #D9325E );
+    filter: drop-shadow(0 0 0 #D9325E );
     
 }
 
 main{
-    margin: 0 auto;
-    margin: 42px 25% 38px 25%
+    /*margin: 0 auto;*/
+    margin: 42px 15% 38px 15%;
     
 }
 
 #pagetitle{
     color: #030A8C;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
     margin-bottom: 18px;
 }
 
@@ -51,8 +64,9 @@ hr{
     margin: 0;
 }
 #lessons{
-    /*margin-bottom: 38px;*/
-    font-family: 'Roboto Slab', serif;;
+ 
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8em;
     line-height: 2;
     color:#030A8C ;
 }
@@ -66,25 +80,25 @@ a:link {
 }
 
 footer{
-    margin: 0 auto;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2 1fr);
+    position:absolute;
+    bottom: 0;
+    width: 100%;
     align-items: center;
-    line-height: 0;
-    color: #030A8C;
     background-color: #F2B705;
-    filter: drop-shadow(10px 10px 0  #6379F2);
+    filter: drop-shadow(0 10px 2px  #6379F2);
     border-radius: 10px;
-    height: auto
+    height: 5%;
 
 }
 
-footer h3{
-    text-align: center;
-}
 
 
 footer p, #updated{
-    font-family: 'Roboto Slab', serif;
+    color:#030A8C;
+    font-size: 90%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
 }

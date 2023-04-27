@@ -1,3 +1,48 @@
 @media only screen and (min-width: 32.5em){
+    header, main, footer{
+        max-width:95%;
+    }
+    
+    header{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(10px 10px 2px #D9325E );
+        border-radius: 15px;
+        height: auto; 
+    }
+    
+    header h1{
+        /*font-size: 1.5em;*/
+        color:#030A8C;
+        text-align: center;
+
+    }
+
+    header .myphoto{
+        padding-top: 5%;
+        width: 30%;
+        border-radius: 0;
+        filter: drop-shadow(0px 0px 0 #D9325E );
+        
+    }
+    main{
+        margin: 0 auto;
+        margin: 42px 10% 38px 10%
+        
+    }
+    #pagetitle{
+        font-size: 1.8em;
+        line-height: 1.5;
+        text-align: center;
+        color: #030A8C;
+        margin-bottom: 18px;
+    }
+
+    footer{
+        filter: drop-shadow(0 10px 2px  #6379F2);
+    }
     
 }
