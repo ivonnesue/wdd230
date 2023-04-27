@@ -14,24 +14,24 @@ header, main, footer{
 header{
     margin: 0 auto;
     display: flex;
-    column-gap: 5%;
+    column-gap: 3%;
     align-items: center;
+    justify-content: center;
     background-color: #F2B705;
     filter: drop-shadow(10px 10px 0 #D9325E );
     border-radius: 10px;
     height: 200px;
-    /*margin-bottom: 1%*/
+ 
 }
 
 header h1{
     color:#030A8C;
-    text-align: right;
+    text-align: center;
     
 }
 header .myphoto{
-    max-width: 120px;
+    width: 130px;
     border-radius: 5px;
-    margin-left: 25%;
     filter: drop-shadow(5px 5px 0 #D9325E );
     
 }
@@ -68,14 +68,14 @@ a:link {
 footer{
     margin: 0 auto;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     align-items: center;
     line-height: 0;
     color: #030A8C;
     background-color: #F2B705;
     filter: drop-shadow(10px 10px 0  #6379F2);
     border-radius: 10px;
-    height: 120px;
+    height: auto
 
 }
 
@@ -87,5 +87,4 @@ footer h3{
 footer p, #updated{
     font-family: 'Roboto Slab', serif;
     text-align: center;
-
 }
