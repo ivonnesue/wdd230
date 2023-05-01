@@ -22,9 +22,9 @@
 
 
     main{
-        display: grid;
+        margin-top: 10%;
+        /*display: grid;*/
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 2%;
         background-color: #DFF2EF;
         margin: 0 auto;
     }
@@ -32,13 +32,7 @@
     .repetiton, .contrast, .thirds{
         max-width: calc(100/2);
     }
-    #pagetitle{
-        font-size: 1.8em;
-        line-height: 1.5;
-        text-align: center;
-        color: #030A8C;
-        margin-bottom: 18px;
-    }
+  
 
     footer{
         filter: drop-shadow(0 10px 2px  #6379F2);

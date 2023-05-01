@@ -21,11 +21,17 @@
     }
 
     main{
-        display: flex;
-        flex-direction: row;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        background-color: #DFF2EF;
+        margin: 0 auto;
     }
 
-
+    .repetiton, .contrast, .thirds{
+        max-width: calc(100/3);
+    }
     a{
         color:#D9325E;
     }
