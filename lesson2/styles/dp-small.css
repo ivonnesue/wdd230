@@ -1,18 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    /*box-sizing: content-box;*/
 }
 
 body {
 
-    position: relative;
+  
     font-family: 'Roboto', 'Roboto slab', arial, helvetica, sans-serif ;
     font-weight: normal; 
     line-height: 1.5;
     background-color: whitesmoke;
-    min-height: 100vh;
-
+    
     }
 
 header, main, footer{
@@ -32,40 +31,34 @@ header{
 }
 
 header h1{
-    
     color:#030A8C;
     text-align: center;
-    
 }
-
 
 main{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 3%;
     background-color: #DFF2EF;
+    margin: 0 auto;
 }
-
 .behanceimg, .appleimg, .navyfedimg{
    max-width: 95%;
-   margin: 0 auto;
-   align-items: center;
 }
 
-hr{
-    margin: 0;
+.repetiton, .contrast, .thirds{
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
 }
-#lessons{
- 
-    font-family: 'Roboto Slab', serif;
-    font-size: 0.8em;
-    line-height: 2;
-    color:#030A8C ;
-}
+
+
 
 a{
     color:#D9325E;
 }
 a:link {
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 
@@ -74,6 +67,7 @@ footer{
     background-color: #F2B705;
     filter: drop-shadow(0 10px 2px  #6379F2);
     border-radius: 10px;
+    /*bottom: 0;*/
     margin: 0 auto;
 
 }

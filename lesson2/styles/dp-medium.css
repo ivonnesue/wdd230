@@ -20,17 +20,17 @@
 
     }
 
-    header .myphoto{
-        padding-top: 5%;
-        width: 20%;
-        border-radius: 0;
-        filter: drop-shadow(0px 0px 2px #D9325E );
-        
-    }
+
     main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2%;
+        background-color: #DFF2EF;
         margin: 0 auto;
-        margin: 42px 10% 38px 10%
-        
+    }
+
+    .repetiton, .contrast, .thirds{
+        max-width: calc(100/2);
     }
     #pagetitle{
         font-size: 1.8em;
