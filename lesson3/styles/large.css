@@ -1,0 +1,44 @@
+@media only screen and (min-width: 760px){
+   
+    header, main, footer{
+        max-width: 85%;
+    }
+
+    header{
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #F2B705;
+        border-radius: 10px;
+        /*height: 200px;*/    
+    }
+
+    header h1{
+        color:#030A8C;
+        text-align: center;
+
+    }
+
+    main{
+        margin-top: 10px;
+        /*display: grid;*/
+        /*grid-template-columns: */
+        /*grid-template-rows: 1fr;*/
+        background-color: #DFF2EF;
+        margin: 0 auto;
+    }
+
+    .repetiton, .contrast, .thirds{
+        max-width: calc(100/3);
+    }
+    a{
+        color:#D9325E;
+    }
+    a:link {
+        text-decoration: none;
+
+    }
+
+}
+    
