@@ -72,45 +72,45 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
     max-width: 100%;
     background-color: var(--nav-background-color);
-  
-   
+      
 }
-nav ul{
+nav ul {
     list-style-type: none;
-    background-color: var(--nav-background-color);
     padding-left: 0;
-   
+    overflow: hidden;
 
 }
-nav ul li{
+nav ul li a{
     display:block;
     text-align: center;
-    padding: 10px
+    padding: 10px;
+    color: var(--nav-link-color);
+    font-weight: bold;
 }
 
 a:link {
-    text-decoration: none;   
+    text-decoration: none;
 }
 a:hover{
-    color: var(--nav-hover-link-color);
-    font-weight: bold;
+    color: var(--nav-hover-link-color)
 }
 nav li:hover{
-    background-color: var(--nav-hover-background-color);
-    padding: 10px;
-   
+    background-color: var(--nav-hover-background-color);   
 }
-
 .active{
+    color: var(--nav-hover-link-color);
     background-color: #F57F44;
     padding: 10px
 }
 
+.active:hover{
+    color: var(--nav-link-color);
+}
+
 main{
-    background-color: #DFF2EF;
+    padding: 5%;
     max-width: 85%;
     margin: 0 auto;
 }
@@ -118,58 +118,50 @@ main{
 main h2{
     color: var(--headline-color-on-white);
     font-family: var(--heading-font);
-    font-weight: 100;
+    /*font-weight: 200;*/
     text-align: center; 
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    
 }
 main h3{
     color: var(--headline-color-on-white);
     font-family: var(--heading-font);
-    font-weight: 100;
+    /*font-weight: 100;*/
     text-align: left; 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     
 }
 
-.behanceimg, .appleimg, .navyfedimg{
-   max-width: 90%;
-   margin: 0 auto;
-   border-radius: 15px;
-}
-
-.repetition, .contrast, .thirds{
-    display: grid;
-    grid-template-rows: 1fr;
-    justify-content: center;
+hr{
+    height: 2px;
+    margin: 15px 0;
+    background-color: var(--accent1-color);
 }
 
 p{
+    padding: 5px;
     font-family: var(--paragraph-font);
+    font-weight: 300;
+    color: var(--paragraph-color-on-white)
     max-width: 95%;
     text-align: justify;
 }
-.behancelink, .applelink, .navyfedlink{
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    margin-bottom: 5%;
-}
+
 
 
 
 footer{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: #F2B705;
-    border-radius: 10px;
+    background-color: var(--nav-background-color);
+
     margin: 0 auto;
 }
 
 
 
 footer p, #updated{
-    color:#030A8C;
+    color: var(--headline-color-on-color);
     font-size: 90%;
     font-family: 'Roboto', sans-serif;
     text-align: center;
