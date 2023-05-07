@@ -234,7 +234,7 @@ p b{
 
 .color2{
     background-color: var(--secondary-color);
-    color: var(--paragraph-color-on-color)
+    color: black;
 }
 
 .color3{
