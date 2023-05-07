@@ -25,15 +25,20 @@
     }
 
     main{
-        margin-top: 10%;
-        /*display: grid;*/
-        /*grid-template-columns: repeat(2, 1fr);*/
-        
+        margin-top: 10%;        
         margin: 0 auto;
     }
 
-
-  
+    
+    .color-container{
+    flex-direction: row;
+    }
+    
+    .color1, .color2, .color3, .color4, .color5, .color6{
+        flex-direction: row;
+        text-align: center;
+        width: calc(100%/6);
+    }
 
     
 }

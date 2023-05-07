@@ -38,6 +38,10 @@ body {
 header, main, footer{
     max-width: 100%;
 }
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+}
 header{
     margin: 0 auto;
     display: flex;
@@ -46,7 +50,6 @@ header{
     justify-content: center;
     background-color: var(--primary-color);
     height: auto;
- 
 }
 
 header h1{
@@ -76,7 +79,7 @@ nav{
     background-color: var(--nav-background-color);
       
 }
-nav ul {
+nav ul{
     list-style-type: none;
     padding-left: 0;
     overflow: hidden;
@@ -117,14 +120,13 @@ main{
 
 main h2{
     color: var(--headline-color-on-white);
-    font-family: var(--heading-font);
+
     /*font-weight: 200;*/
     text-align: center; 
     
 }
 main h3{
     color: var(--headline-color-on-white);
-    font-family: var(--heading-font);
     /*font-weight: 100;*/
     text-align: left; 
     border-top-left-radius: 15px;
@@ -141,13 +143,124 @@ hr{
 p{
     padding: 5px;
     font-family: var(--paragraph-font);
-    font-weight: 300;
-    color: var(--paragraph-color-on-white)
+    font-weight: 400;
+    color: var(--paragraph-color-on-white);
     max-width: 95%;
-    text-align: justify;
+    text-align: left;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logoimg{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding: 2%;
+  
+}
+
+p b{
+    font-weight: bolder;
+}
+.persona1, .persona2{
+    padding: 20px;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.persona1 .johnphoto, .persona2 .annaphoto{
+    
+    max-width: 100%;
+    padding: 10px;
+    
+}
+
+.persona1 h4, .persona2 h4{
+    max-width: 85%;
+    text-align: left;
+    padding: 10px 25px 10px;
+
+}
+
+.userlist1, .userlist2{
+    text-align: left;
+    margin-left: 0;
+    list-style-position: outside;
+}
+
+.header-on-white, .para-on-white{
+    padding: 10px;
+}
+.header-on-color{
+    background-color:#2889CA;
+    color:#fff;
+    padding: 10px;
+    font-weight: 300;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.para-on-color{
+    background-color: var(--accent2-color);
+    color: var(--paragraph-color-on-white);
+    padding: 10px;
 }
 
 
+.color-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.color1, .color2, .color3, .color4, .color5, .color6{
+    margin: 0 auto;
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    text-align: center;
+    width: 100%
+   
+}
+
+.color1{
+    background-color: var(--primary-color);
+    color: var(--paragraph-color-on-color);
+}
+
+.color2{
+    background-color: var(--secondary-color);
+    color: var(--paragraph-color-on-color)
+}
+
+.color3{
+    background-color: var(--accent1-color);
+    color: #0B2034
+}
+
+.color4{
+    background-color: var(--accent2-color);
+    color:#0B2034;
+}
+
+
+.color5{
+    color: var(--paragraph-color-on-white);
+    border-inline: 1px solid #0B2034;
+}
+
+.color6{
+    background-color: var(--headline-color-on-white);
+    color: var(--paragraph-background-color);
+}
+
+
+.sitemap{
+    max-width: 100%;
+}
 
 
 footer{
