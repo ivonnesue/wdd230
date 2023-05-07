@@ -1,7 +1,11 @@
 @media only screen and (min-width: 760px){
    
+    body{
+        max-width:900px;
+    }
     header, main, footer{
         max-width: 100%;
+    
     }
 
     header{
@@ -23,7 +27,30 @@
         margin: 0 auto;
     }
 
- 
+    .personas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .persona1, .persona2{
+        padding: 20px;
+        align-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .persona1 .johnphoto, .persona2 .annaphoto{
+        
+        max-width: 100%;
+        padding: 10px;
+        
+    }
+    
+    .persona1 h4, .persona2 h4{
+        max-width: 85%;
+        text-align: left;
+        padding: 10px 25px 10px;
+    
+    }
 
 }
     
