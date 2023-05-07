@@ -1,7 +1,7 @@
 :root {
     /* change the values below to your colors from your palette */
     --primary-color:  #103E65  ;
-    --secondary-color: #2889CA ;
+    --secondary-color: #7BBBE5 ;
     --accent1-color: #F57F44 ;
     --accent2-color: #FEC111;
   
@@ -193,8 +193,8 @@ p b{
     padding: 10px;
 }
 .header-on-color{
-    background-color:#2889CA;
-    color:#fff;
+    background-color:#7BBBE5;
+    color:black;
     padding: 10px;
     font-weight: 300;
     width: 95%;
