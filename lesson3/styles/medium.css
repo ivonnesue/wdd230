@@ -41,7 +41,6 @@
     .color1, .color2, .color3, .color4, .color5, .color6{
         flex-direction: row;
         text-align: center;
-        width: calc(100%/6);
     }
 
     

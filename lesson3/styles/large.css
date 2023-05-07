@@ -31,13 +31,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .persona1, .persona2{
-        padding: 20px;
-        align-content: center;
-        text-align: center;
-        margin: 0 auto;
-    }
-    
+ 
     .persona1 .johnphoto, .persona2 .annaphoto{
         
         max-width: 100%;
@@ -52,5 +46,13 @@
     
     }
 
+    .color-container{
+        /*display: grid;
+        grid-template-columns: repeat(6, 1fr);*/
+        padding: 20px;
+       
+    }
+
+    
 }
     
