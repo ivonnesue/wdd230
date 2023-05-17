@@ -1,0 +1,107 @@
+@media only screen and (min-width: 35rem){
+    /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+    html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+    :root {
+    /* change the values below to your colors from your palette */
+    --primary-color:  #103E65  ;
+    --secondary-color: #7BBBE5 ;
+    --accent1-color: #F57F44 ;
+    --accent2-color: #FEC111;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "DM Serif Display", serif;
+    --paragraph-font: 'Work Sans', sans-serif, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #0B2034;  /* headlines on a white background */ 
+    --headline-color-on-color: #EEF6FC; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #0B2034; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #EEF6FC; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #fff;
+    --nav-link-color: #EEF6FC  ;
+    --nav-background-color: #103E65 ;
+    --nav-hover-link-color: #0B2034 ;
+    --nav-hover-background-color: #FEC111;;
+  }
+
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body{
+    font-family: var(--paragraph-font);
+    font-weight: normal; 
+    line-height: 1.5;
+    margin: 0 auto;
+  
+}
+   header{
+    padding-top: 1%;
+    padding-bottom: 1%;
+   }
+    .title-box{
+        display: block;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+        line-height: 1.2;
+    }
+    
+    h1{
+        font-size: 1.5em;
+        margin: 0;
+        font-family: var(--heading-font);
+    
+    }
+
+    nav button{
+        display: none;
+    }
+
+    nav ul#primaryNav{
+        display: flex;
+        /*margin-left: 2vw;*/
+        border-top: 1px solid rgba(219, 233, 248, 0.5);
+        justify-content: center;
+    }
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(219, 233, 248, 0.5);
+    }
+
+    /*main {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }*/
+      main :nth-child(1) { 
+        order: 1; 
+        flex-grow: 3;
+    }
+      main :nth-child(2) { order: 5;
+        flex-grow: 3;
+    }
+      main :nth-child(3) { order: 6; 
+        flex-wrap: 3;
+    }
+      main :nth-child(4) { order: 2; }
+      main :nth-child(5) { order: 4; }
+      main :nth-child(6) { order: 3; }
+
+
+    .spotlights{
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .spotlight1, .spotlight2{
+        height: 98%;
+        width: 48%;
+    }
+    .join{
+        display: block;
+    }
+
+    .weather{
+        display: flex;
+        flex-shrink: 0.5;
+    }
+}

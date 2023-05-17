@@ -1,0 +1,187 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color:  #103E65  ;
+    --secondary-color: #7BBBE5 ;
+    --accent1-color: #F57F44 ;
+    --accent2-color: #FEC111;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "DM Serif Display", serif;
+    --paragraph-font: 'Work Sans', sans-serif, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #0B2034;  /* headlines on a white background */ 
+    --headline-color-on-color: #EEF6FC; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #0B2034; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #EEF6FC; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #fff;
+    --nav-link-color: #EEF6FC  ;
+    --nav-background-color: #103E65 ;
+    --nav-hover-link-color: #0B2034 ;
+    --nav-hover-background-color: #FEC111;;
+  }
+
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body{
+    font-family: var(--paragraph-font);
+    font-weight: normal; 
+    line-height: 1.5;
+    margin: 0 auto;
+  
+}
+/*h1, p{
+    margin: 0 2vw;
+}*/
+header, main, footer{
+    padding: 3%;
+}
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; 
+}
+header #logoimage {
+  max-width: 150px;
+}
+.social{
+    display:flex;
+    justify-content: end;
+    align-items: end;
+}
+.title-box{
+    display: none;
+}
+
+.date{
+    grid-row: 2;
+    text-align: center;
+    background-color: var(--accent2-color);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+}
+nav button{
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--paragraph-color-on-color);
+}
+nav{
+    background-color: var(--primary-color);
+}
+
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a{
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: var(--paragraph-color-on-color);
+    border-top: 1px solid rgba(219, 233, 248, 0.5);
+    
+}
+nav ul li.active a {
+    background-color: var(--accent1-color) ;
+    color: #fff
+}
+
+nav ul li a:hover{
+    background-color: var(--secondary-color);
+    color: var(--paragraph-color-on-white)
+
+}
+
+nav ul {display: none;}
+
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1){
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2){
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1){
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2){
+    display: block;
+}
+
+
+
+main{
+    /*display: grid;
+    grid-template-columns: 1fr;*/
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.hero, .event, .weather, .news, .join, .spotlights{
+    border: 1px solid black;
+    height: 200px;
+    background-color: lightgray;
+}
+main p{
+    padding: 10px;
+}
+
+.join{
+    display: none;
+}
+.spotlights{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3%;
+}
+.spotlight1, .spotlight2, .spotlight3{
+    background-color: #eee;
+    height:fit-content;
+    border: 1px solid black;
+}
+.spotlight3{
+    display: none;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--paragraph-color-on-color);
+    text-align: center;
+}
+
+footer h2{
+    font-family: var(--heading-font);
+    font-size: 1.4em;
+    font-weight: 300;
+    
+}
+
+
+footer a, a:visited{
+    color: var(--paragraph-background-color)
+}
+
+.author-bar{
+    border-top: 2px solid #eee;
+    font-size: small;
+}
+
+

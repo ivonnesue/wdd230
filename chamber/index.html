@@ -7,10 +7,15 @@
     <meta name="description" content="Chamber of Commerce website project for WDD230
     BYU-I, by Ivonne Ramos."> 
     <meta name="author" content="Ivonne Sue Aponte R.">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagesf/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -18,15 +23,91 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#"></a>Contact</li>
-            </ul>
-        </nav>
+        <div class="logobox">
+            <img id="logoimage"
+            src="images/logocolor.png" alt="Maryville Chamber logo">
+        </div>
+        <div class="title-box">
+            <h1>Welcome to the Marysville Chamber of Commerce</h1>
+            <q>Marysville, The Oldest Little City in California</q>
+        </div>
+        
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="images/linkedin.png" alt="linkedin icon"></a>
+        </div>
     </header>
-    
+    <nav>
+<button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>        
+        <ul id="primaryNav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="date">
+        <span id="date">Tuesday, 16 May 2023</span>
+    </div>
+  
+    <main>
+        <div class="hero">
+            <p>Hero with site name and call to action</p>
+        </div>
+        <section class="event">
+            <p>Event</p>
+        </section>
+        <section class="weather">
+            <p>weather</p>
+        </section>
+        <section class="news">
+            <p>News Release</p>
+        </section>
+        <section class="join">
+            <p>Join</p>
+        </section>
+        <aside class="spotlights">
+            <article class="spotlight1">
+                <p>Spotlight 1</p>
+            </article>
+            <article class="spotlight2">
+                <p>Spotlight 2</p>
+            </article>
+            <article class="spotlight3">
+                <p>Spotlight3</p>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+
+        <div class="logo-footer">
+            <img src="images/logo-light.png" alt="Marysville Chamber logo light color">
+            <a href="index.html"></a>
+        </div>
+        
+        <section class="address">
+            <h2>Marysville Chamber of Commerce</h2>
+            <p>922 G St, Marysville, CA 95901
+                <span> 
+                    <a href="https://goo.gl/maps/yPFyiWmtrjiKWZiS9"target="_blank"><span class="material-symbols-outlined"> map</span></a>
+                </span>
+            </section>
+            </p>
+         
+        
+        <div class="contact">
+            <p>E-mail: info@marysvillechamber.com <br> 
+                Phone: 530-354-7896
+            </p>
+        </div>
+        <div class="author-bar">
+            <p>&copy;<span id="year"></span> Marysville Chamber of Commerce | Ivonne Aponte | WDD230 Project</p>
+            <p>Last Updated: <span id = "updated"></span></p>
+        </div>
+
+
+    </footer>
+<script src="scripts/main.js"></script>
 </body>
 </html>
