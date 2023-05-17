@@ -171,6 +171,7 @@ footer h2{
     font-family: var(--heading-font);
     font-size: 1.4em;
     font-weight: 300;
+    margin: -1;
     
 }
 
