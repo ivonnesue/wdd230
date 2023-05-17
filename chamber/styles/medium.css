@@ -60,12 +60,12 @@ body{
     nav ul#primaryNav{
         display: flex;
         /*margin-left: 2vw;*/
-        border-top: 1px solid rgba(219, 233, 248, 0.5);
+        border-top: none;
         justify-content: center;
     }
     nav ul li a{
         border: none;
-        border-right: 1px solid rgba(219, 233, 248, 0.5);
+        border-right: none;
     }
 
     /*main {
@@ -93,7 +93,8 @@ body{
     }
 
     .spotlight1, .spotlight2{
-        height: 98%;
+        /*height: auto;*/
+        column-gap: 10px;
         width: 48%;
     }
     .join{

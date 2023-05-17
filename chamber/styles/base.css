@@ -133,7 +133,7 @@ main{
 }
 
 .hero, .event, .weather, .news, .join, .spotlights{
-    border: 1px solid black;
+  
     height: 200px;
     background-color: lightgray;
 }
@@ -152,8 +152,8 @@ main p{
 }
 .spotlight1, .spotlight2, .spotlight3{
     background-color: #eee;
-    height:fit-content;
-    border: 1px solid black;
+    height: auto;
+    border: 1px solid gray;
 }
 .spotlight3{
     display: none;
@@ -181,7 +181,7 @@ footer a, a:visited{
 }
 
 .author-bar{
-    border-top: 2px solid #eee;
+    border-top: 2px solid rgba(219, 233, 248, 0.5);
     font-size: small;
 }
 
