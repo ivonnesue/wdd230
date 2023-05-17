@@ -89,6 +89,10 @@
         align-items:center;
 
     }
+    footer .h2{
+        line-height: 0;
+        margin: 0.5em;
+    }
     .logo-footer{
         grid-column: 1/2;
         grid-row: 1/2;
