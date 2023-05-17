@@ -102,6 +102,11 @@
         grid-column: 3/4;
         grid-row: 1/2;
     }
+    .address{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: left;
+    }
     .author-bar{
         grid-column: 1/4;
         grid-row: 2/3;
