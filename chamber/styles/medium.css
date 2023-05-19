@@ -53,20 +53,9 @@ body{
     
     }
 
-    nav button{
-        display: none;
-    }
+  
 
-    nav ul#primaryNav{
-        display: flex;
-        /*margin-left: 2vw;*/
-        border-top: none;
-        justify-content: center;
-    }
-    nav ul li a{
-        border: none;
-        border-right: none;
-    }
+
 
     /*main {
         flex-flow: row wrap;

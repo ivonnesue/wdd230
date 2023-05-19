@@ -34,7 +34,21 @@
         line-height: 1.5;
         margin: 0 auto;
     }
+    nav button{
+        display: none;
+    }
 
+    nav ul#primaryNav{
+        display: flex;
+        /*margin-left: 2vw;*/
+        border-top: none;
+        justify-content: center;
+    }
+    nav ul li a{
+        border: none;
+        border-right: none;
+    }
+    
     main{
         padding-top: 1%;
         padding-bottom: 1%;
