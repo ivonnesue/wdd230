@@ -43,5 +43,3 @@ const closeBtn = document.querySelector("#close-button");
 closeBtn.addEventListener("click", () => {
     banner.style.display = "none";
 });
-
-let image
