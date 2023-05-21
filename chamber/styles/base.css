@@ -33,9 +33,37 @@ body{
     margin: 0 auto;
   
 }
-/*h1, p{
-    margin: 0 2vw;
-}*/
+/*banner properties*/
+.banner {
+    display: none;
+    width: 100%;
+    background-color: var(--accent2-color);
+    color: var(--paragraph-color-on-white);
+    padding: 0.7em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  .banner.toggleOn {
+    display: block;
+  }
+  
+  #close-button {
+    background-color: #EEF6FC;
+    padding: 2px;
+    border: 0;
+    border-radius: 2px;
+  }
+  
+  #close-button:hover {
+    background-color: var(--nav-background-color);
+  }
+  
+  #close-button:active {
+    background-color: white;
+  }
+/*header properties*/
 header, main, footer{
     padding: 3%;
 }
@@ -58,13 +86,13 @@ header #logoimage {
 }
 
 .date{
-    grid-row: 2;
     text-align: center;
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     padding-top: 2px;
     padding-bottom: 2px;
     
 }
+/*navigation properties*/
 nav button{
     margin: .2rem 2vw;
     background: transparent;
@@ -97,7 +125,7 @@ nav ul li.active a {
 }
 
 nav ul li a:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
     color: var(--paragraph-color-on-white)
 
 }
@@ -122,38 +150,150 @@ nav ul.open {display: block;}
     display: block;
 }
 
-
-
+/*main properties*/
 main{
-    /*display: grid;
-    grid-template-columns: 1fr;*/
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 
-.hero, .event, .weather, .news, .join, .spotlights{
-  
-    height: 200px;
-    background-color: lightgray;
+.hero, .event, .weather, .news, .join, .weather{
+    height: 230px;
+    background-color: whitesmoke;
 }
 main p{
     padding: 10px;
+    padding: 0 10px 0 10px;
+    line-height: 1;
+}
+main h2{
+    padding: 0 10px 0 10px;
+    font-family: var(--heading-font);
+    letter-spacing: 0.3mm;
+    line-height: 1;
 }
 
+/*1. Hero*/
+.hero{
+    position: relative;
+
+}
+.hero-img{
+    display: none;
+    
+}
+
+.hero-fields{
+    object-fit: cover;
+    width: 100%; height: 100%;
+}
+#joinBtn{
+    position: absolute;
+    top: 50%;
+    right: 39%;
+    width:80px;
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    background-color: var(--accent2-color);
+    border-radius: 5px;
+    border: 0;
+    filter: drop-shadow(0 5px 5px )
+}
+#joinBtn a{
+    text-decoration: none;
+    color:var(--headline-color-on-white);
+}
+
+#joinBtn:hover{
+    background-color: var(--accent1-color);
+}
+#joinBtn a:hover{
+    color: var(--paragraph-color-on-color);
+}
+/*2. Event*/
+.event{
+    
+    display: block;
+    overflow: auto; 
+    /*justify-content: center;*/
+}
+.event-img{
+    margin-top: 12px;
+    max-height: 80%;
+    padding: 10px;
+    float: left;    
+}
+.text-box > h2, h3{
+    line-height: 1;
+    letter-spacing: 0.3mm;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+}
+/*.event p*/
+
+/*3 Weather*/
+.weather{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    background-color: var(--secondary-color);
+
+}
+.weather img{
+    margin-left: 10%;
+    grid-column: 1/2;
+    grid-template-rows: 1/2;
+    padding: 10px;
+    max-height: 170px;
+    max-width: 170px;
+    filter: drop-shadow(5px 5px 6px  #2d8cf1);
+}
+
+.weather h2{
+    font-family: var(--heading-font);
+    letter-spacing:0.5mm ;
+}
+.weather p{
+    font-size: 2em;
+    grid-column: 2/3; 
+}
+
+.weather .text-box{
+    color: #fff;
+}
+
+/*4. News*/
+.news{
+    overflow: auto;
+}
+
+/*5. Join*/
 .join{
     display: none;
 }
+
+/*6.Spotlight*/
 .spotlights{
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 3%;
+    background-color: whitesmoke;
 }
-.spotlight1, .spotlight2, .spotlight3{
+.spotlight1, .spotlight2{
+    display: flex;
+    overflow-y: auto;
     background-color: #eee;
-    height: auto;
-    border: 1px solid gray;
+    height: 45%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.spotlights img{
+    object-fit: cover;
+    width: auto; height: 100%;
 }
 .spotlight3{
     display: none;
@@ -180,7 +320,7 @@ footer a, a:visited{
     color: var(--paragraph-background-color)
 }
 
-.author-bar{
+.authorBar{
     border-top: 2px solid rgba(219, 233, 248, 0.5);
     font-size: small;
 }

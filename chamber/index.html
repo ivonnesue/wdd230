@@ -10,18 +10,21 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagesf/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Marysville Chamber of Commerce</title>
 </head>
 <body>
+    <div class="banner">
+        <span>🤝🏼 Come join us for the Chamber Meet and Greet, Wednesday at 7:00 p.m.</span>
+        <button id="close-button"><span>❌</span></button>
+    </div>
     <header>
         <div class="logobox">
             <img id="logoimage"
@@ -52,31 +55,47 @@
   
     <main>
         <div class="hero">
-            <!--<img class="hero-img" src="images/entrepreneurs.jpg" alt="entrepreneurs">-->
+            <img class="hero-img" src="images/entrepreneurs.jpg" alt="entrepreneurs">
+            <img class="hero-fields" src="images/fields.jpg" alt="fields">
+            <button id="joinBtn"><a href="#">Join</a></button>
         </div>
         <section class="event">
-            <h2>Ribbon Cutting</h2>
-            <h3>The Diamond Shack</h3>
-            <p>Join us for the grand opening of the Diamond Shack, Thursday at 1:00 p.m.</p>
+            <img class="event-img" src="images/diamond-shack2.jpg" alt="event photo">
+            <div class="text-box">
+                <h2>Ribbon Cutting</h2>
+                <h3>The Diamond Shack</h3>
+                <p>Join us for the grand opening of the Diamond Shack, Thursday at 1:00 p.m.</p>
+            </div>
         </section>
         <section class="weather">
-            <p>weather</p>
+            <img src="images/weather-02.png" alt="sunny">
+            <div class="text-box" ><h2>Weather</h2>
+                <p>85°F <br> Sunny</p></div>
         </section>
         <section class="news">
-            <p>News Release</p>
+            <h2>News Release</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </section>
         <section class="join">
-            <p>Join</p>
+            <button id="joinUs"><a href="#">Join Us!</a></button>
+            <p>Discover how to join the Chamber of Commerce and how it will benefit your business!</p>
         </section>
         <aside class="spotlights">
             <article class="spotlight1">
-                <p>Spotlight 1</p>
+                <img src="images/other-logos/logo3.png" alt="Pumpkin Farm logo">
+                <p><strong>John's Pumpkin Farm</strong> <br>Call: (530)248-9843</p>
             </article>
             <article class="spotlight2">
-                <p>Spotlight 2</p>
+                <img src="images/other-logos/logo1.png" alt="HVAC logo">
+                <p><strong>HVAC Sevices</strong> <br>Call: (530)248-5613</p>
+             
             </article>
             <article class="spotlight3">
-                <p>Spotlight3</p>
+                <img src="images/other-logos/logo2.png" alt="coding logo">
+                <p><strong>After School Coding</strong> <br>Call: (530)682-8520</p>
+              
             </article>
         </aside>
     </main>
@@ -101,7 +120,7 @@
                 Phone: 530-354-7896
             </p>
         </div>
-        <div class="author-bar">
+        <div class="authorBar">
             <p>&copy;<span id="year"></span> Marysville Chamber of Commerce | Ivonne Aponte | WDD230 Project | Last Updated: <span id = "updated"></span></p>
         </div>
 

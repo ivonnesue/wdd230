@@ -26,3 +26,20 @@ document.querySelector("#year").textContent = currentDate.getFullYear();
 let lastUpdate = document.lastModified;
 document.getElementById("updated").innerHTML= lastUpdate;
   
+let banner = document.querySelector(".banner");
+
+
+
+let day = new Date().getDay();
+
+
+if (day == 1 || day == 2)
+{
+    banner.classList.toggle("toggleOn");
+} 
+
+const closeBtn = document.querySelector("#close-button");
+
+closeBtn.addEventListener("click", () => {
+    banner.style.display = "none";
+});
