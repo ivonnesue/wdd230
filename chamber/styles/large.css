@@ -126,7 +126,8 @@
         grid-row: 1/4;
     }
     .spotlight1 img, .spotlight2 img, .spotlight3 img{
-        width: 100%
+        width: 100%;
+        padding: 15px;
     }
     .spotlight1, .spotlight2, .spotlight3{
         height: 33%;

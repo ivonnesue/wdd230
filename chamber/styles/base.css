@@ -166,7 +166,7 @@ main p{
     padding: 0 10px 0 10px;
     line-height: 1;
 }
-main h2{
+main h2, h4{
     padding: 0 10px 0 10px;
     font-family: var(--heading-font);
     letter-spacing: 0.3mm;
@@ -281,7 +281,9 @@ main h2{
     background-color: whitesmoke;
 }
 .spotlight1, .spotlight2{
-    display: flex;
+    display:block;
+    /*grid-template-columns: 1fr 1fr;
+    grid-template-rows: 230px;*/
     overflow-y: auto;
     background-color: #eee;
     height: 45%;
@@ -291,7 +293,11 @@ main h2{
 
 .spotlights img{
     object-fit: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
     width: auto; height: 100%;
+    float: left;
+    padding-right: 15px
 }
 .spotlight3{
     display: none;
