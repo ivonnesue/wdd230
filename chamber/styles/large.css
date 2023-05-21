@@ -116,6 +116,7 @@
     }
     #joinUs{
         grid-column: 1/4;
+        width: 60%;
         margin: 0 auto;
     }
     .spotlights{

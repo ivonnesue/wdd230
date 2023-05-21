@@ -103,15 +103,17 @@ body{
     #joinUs{
         grid-column: 2/3;
         grid-row: 2/3;
-        background-color: var(--accent2-color) ;
+        background-color: var(--accent2-color);
+        text-align: center;
         font-size: 2rem;
         font-family: var(--heading-font);
         border-radius: 10px;
         border: none;
         filter: drop-shadow(0px 5px 6px);
-        height: 50%
+        height: 50%;
+        
     }
-    #joinUs a{
+    #joinUs{
         text-decoration: none;
         color: var(--paragraph-color-on-white)
     }
@@ -121,9 +123,8 @@ body{
     }*/
     #joinUs:hover{
         background-color: var(--accent1-color);
-    }
-    #joinUs a:hover{
-        color: #fff
+        color: #fff;
+        filter: drop-shadow(0px 5px 6px #000);
     }
     .join p{
         font-weight:600;

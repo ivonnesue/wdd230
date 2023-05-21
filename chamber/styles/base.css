@@ -193,23 +193,24 @@ main h2{
     right: 39%;
     width:80px;
     font-size: 2rem;
+    text-align: center;
     font-family: var(--heading-font);
     background-color: var(--accent2-color);
     border-radius: 5px;
     border: 0;
     filter: drop-shadow(0 5px 5px )
 }
-#joinBtn a{
+#joinBtn{
     text-decoration: none;
     color:var(--headline-color-on-white);
 }
 
 #joinBtn:hover{
     background-color: var(--accent1-color);
-}
-#joinBtn a:hover{
     color: var(--paragraph-color-on-color);
+    filter: drop-shadow(0 5px 5px #000 )
 }
+
 /*2. Event*/
 .event{
     
