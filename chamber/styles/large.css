@@ -29,6 +29,7 @@
     /*----------- apply a natural box layout model to all elements --------------*/
     * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
     body{
+        max-width: 100%;
         font-family: var(--paragraph-font);
         font-weight: normal; 
         line-height: 1.5;
@@ -80,17 +81,19 @@
         height: auto;
         grid-column: 1/2;
         grid-row:1/2;
+        display: flex;
+        flex-direction: column;
         overflow: scroll;
+
     }
     /*.text-box{
         display: none;
     }*/
     .event-img{
-        object-fit: contain; object-position: 0;
-        max-height:75%;
-        padding: 10px;
+        object-fit: contain; /*object-position: 0;*/
+        max-height:100%;
+        padding: 20px;
         float: left;
-        overflow:visible;
         margin: 0 auto;
     }
     .weather{
@@ -120,6 +123,9 @@
         height: auto;
         grid-column: 3/4;
         grid-row: 1/4;
+    }
+    .spotlight1 img, .spotlight2 img, .spotlight3 img{
+        width: 100%
     }
     .spotlight1, .spotlight2, .spotlight3{
         height: 33%;
