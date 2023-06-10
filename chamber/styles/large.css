@@ -50,7 +50,7 @@
         border-right: none;
     }
 
-    main{
+    .homeMain{
         padding-top: 1%;
         padding-bottom: 1%;
         display: grid;
@@ -141,6 +141,11 @@
         align-content: center;
         border: 1px solid lightgrey;
         border-radius: 5px;
+    }
+
+    /*Join Page attributes*/
+    .joinInfo{
+        display: block;
     }
 
     footer{
