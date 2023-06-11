@@ -52,25 +52,72 @@
     <div class="date">
         <span id="date">Tuesday, 16 May 2023</span>
     </div>
-    <main class="joinMain"> 
-        <section class="joinInfo">
+    <main class="joinMain">
+        <section class="form-section">
             <H2>Join Us Now!</H2>
-            <h3>Membership Benefits</h3>
-            <li>NP - Non Profit organizations: no fee
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>Bronze: $00
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" autocomplete="given-name" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" autocomplete="family-name" required></label>
+                    <label class="top">Business Position <input type="text" name="role" minlength="7" autocomplete="organization-title" placeholder="Management"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" autocomplete="tel" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" autocomplete="email" required></label>
+                    <label class="top">Business Name* <input type="text" name="business" autocomplete="organization" required></label>
+                    
+                    
+                    <label for="text-box" class="top">Tell us about your business <textarea name="text-box" id="bDescription" cols="30" rows="10"></textarea></label>
+                </fieldset>   
+                <fieldset>     
+                    <legend>Membership</legend>
+                    <p><b>Choose a membership Plan</b></p>
+                    <p>For more information, check plans details below.</p>
+                    <label class="sbs"><input type="radio" name="membership" value="free">Non-Profit: No fee</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze: $25 monthly</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver">Silver $63 monthly</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold">Gold $100 monthly</label>
+
+                   </fieldset>
+                    <input type="submit" value="Get My Membership" class="submitBtn">
+            </form>
+
+        </section>
+        <section class="joinInfo">
+            <h2>Membership Benefits</h3>
+            <ul>
+                <li>NP - Non Profit organizations: no fee
+                    <p>Group, service organizations, and indiciduals operationg as a 501c3. *A copy of the organization's
+                    501c3 filing status is requred. 
                     </p>
-            </li>
-            <li>Silver: $00
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                
+                    <p>
+                    New Member orientation, market landing page, marketing planning, busines directory,
+                    invitation to networking events,free webinars, access to web tools, business advocacy, and more.
                     </p>
-            </li>
-            <li>Gold: $000
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </li>
+                <li>Bronze: $25 monthly
+                    <p> One-on-one coaching by chamber staff, market landing page, SEO services,
+                        business directory listing, ribbo-cutting and or milestone event, free webinars,
+                        business referal services, access to consulting, training and education programs, 
+                        business advocacy and more. 
+
                     </p>
-            </li>
+                </li>
+                <li>Silver: $63 montly
+                    <p> One-one-one coaching by chamber staff, landing page, electronic membership directory, starter products
+                        and service catalog, your own business mobile application, 15% discounts on local busineses,
+                        marketing planning with access to local adverstising network and directory, 90 adds with no extra charge,
+
+
+                        </p>
+                </li>
+                <li>Gold: $100 monthly
+                    <p> One-one-one coaching by chamber staff, gala sponsorship recogniztion, starter catalog, website and mobile application, 
+                        full marketing and advertising planning, improved SEO, online business meeting or tradeshow booth, 
+                        listing in local directory and network, real-time advertising reports, 150 ads with no extra charge, deals in local businesses, and more.
+                        </p>
+                </li>
+        </ul>
         </section> 
         <section class="joinForm">
             <form action=""></form>
