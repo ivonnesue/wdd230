@@ -166,7 +166,7 @@
     .planstTable{
         max-width: 100%;
     }
-    .planstTable tbody td:nth-child(2){
+    .planstTable td:nth-child(2){
         padding: 15px;
         padding-right: 15px;
     }
