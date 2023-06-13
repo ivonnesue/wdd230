@@ -63,7 +63,7 @@ body{
   #close-button:active {
     background-color: white;
   }
-/*header properties*/
+/*----------Header--------------*/
 header, main, footer{
     padding: 3%;
 }
@@ -92,7 +92,7 @@ header #logoimage {
     padding-bottom: 2px;
     
 }
-/*navigation properties*/
+/*--------navigation------------*/
 nav button{
     margin: .2rem 2vw;
     background: transparent;
@@ -150,7 +150,7 @@ nav ul.open {display: block;}
     display: block;
 }
 
-/*main properties*/
+/*-------------main properties*-------------*/
 main{
     display: flex;
     flex-direction: column;
@@ -302,6 +302,115 @@ main h2, h4{
 .spotlight3{
     display: none;
 }
+
+/*---------Form--------------*/
+.form-section{
+    margin: 0 auto;
+}
+.form-section h2{
+    text-align: center;
+}
+form{
+    width: 30rem;
+    margin: 0 auto;
+}
+
+form fieldset{
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    width: 100%;
+    border-radius: 10px;
+    padding: .5rem 5%;
+
+}
+
+form legend{
+    color: var(--headline-color-on-white);
+    margin: 0 1rem;
+    padding: 0.5rem
+}
+
+
+form label.top, form div{
+    display: block;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    color: darkred;
+    font-size: 1em;
+    max-width: 30rem;
+    
+}
+
+form label.top #text{
+    padding-left: 70px;
+}
+
+form label.top input{
+    appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+  
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs{
+    display: block;
+    margin: 0 auto;
+    padding: 0.75rem;
+    color: #555;
+}
+form label.sbs input.radioBtn{
+    margin-right: 0.5em;
+    width: 20px;
+    height: 20px;
+}
+
+form input.submitBtn{
+    border: none;
+    background-color: var(--accent2-color);
+    color: var(--nav-hover-link-color);
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 95%;
+    max-width: 20rem;
+}
+input.submitBtn:hover{
+    background-color: var(--accent1-color);
+    color: var(--paragraph-color-on-color);
+    filter: drop-shadow(0 5px 5px #000 )
+}
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid{
+    border-left: green solid 6px;
+
+}
+form textarea{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+/*----------Table----------*/
+.joinInfo h2{
+    text-align: center;
+}
+
+table{
+    display: none;
+}
+
+
+/*---------Footer-------------*/
 footer{
     display: flex;
     flex-direction: column;

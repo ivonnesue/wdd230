@@ -143,6 +143,17 @@
         border-radius: 5px;
     }
 
+    /*----JOIN MAIN-------*/
+    .joinMain{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /*-------Form-----------*/
+    form{
+        max-width: 100%;
+    }
     /*Join Page attributes*/
     .joinInfo{
         display: block;
