@@ -156,15 +156,19 @@ body{
     }
 
     /*----------Table-------------*/
+    .joinInfo{
+        width: 100%;
+    }
     .joinInfo h2{
         text-align: center;
     }
 
-    table{
-        display: block;
-        margin: 0 auto;
-        max-width: 85%;
-        padding: 5%;
+    .plansTable{
+        display:block;
+        width: 32em;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
         font-family: 'Work Sans', Arial, Helvetica, sans-serif;
         border-collapse: collapse;
         text-align: center;
@@ -183,13 +187,16 @@ body{
     #blank{
         background-color: var(--primary-color);
     }
+   
     th{
+        /*width: 100%;*/
         background-color: var(--accent1-color);
         color: white;
         font-size: 1.2em;
-        padding: 10px 20px
+        padding: 10px 10px;
     }
     td{
+        /*width: 100%;*/
         padding: 10px;
         border: 1px solid gray;
     }

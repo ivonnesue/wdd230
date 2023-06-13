@@ -151,6 +151,9 @@
     }
 
     /*-------Form-----------*/
+    .form-section{
+        width: 90%;
+    }
     form{
         max-width: 100%;
     }
@@ -159,6 +162,10 @@
         display: block;
     }
 
+    /*table Join Page*/
+    table{
+        max-width: 90%;
+    }
     footer{
         /*display: grid;*/
         padding: 1%;
