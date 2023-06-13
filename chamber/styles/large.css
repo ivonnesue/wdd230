@@ -155,7 +155,7 @@
         width: 90%;
     }
     form{
-        max-width: 100%;
+        max-width: 85%;
     }
     /*Join Page attributes*/
     .joinInfo{
@@ -163,8 +163,12 @@
     }
 
     /*table Join Page*/
-    table{
-        max-width: 90%;
+    .planstTable{
+        max-width: 100%;
+    }
+    .planstTable tbody td:nth-child(2){
+        padding: 15px;
+        padding-right: 15px;
     }
     footer{
         /*display: grid;*/
