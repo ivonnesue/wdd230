@@ -63,10 +63,10 @@
                     <label class="top">First Name* <input type="text" name="fname" autocomplete="given-name" required></label>
                     <label class="top">Last Name* <input type="text" name="lname" autocomplete="family-name" required></label>
                     <label class="top">Phone* <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" 
-                        patter="\(?\d{3}\)?[-\s]?\d{3}[-\s]?\d{4}?"autocomplete="tel" required></label>
+                        patter="\(?\d{3}\)?[-\s]?\d{3}[-\s]?\d{4}?" maxlength="12" title="Enter digits 0-9, may contain dash(-) or space. No more than 12 characters" autocomplete="tel" required></label>
                     <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" autocomplete="email" required></label>
                     <label class="top">Business Position <input type="text" name="role" minlength="7" pattern="[A-Za-z\s\-]*"
-                        autocomplete="organization-title" title="P"
+                        autocomplete="organization-title" title="Enter at least 7 characters 'a-z' (lowercase or capitalized), or a hyphen(-)"
                         placeholder="Manager"></label>
                    
                     <label class="top">Business Name* <input type="text" name="business" autocomplete="organization" required></label>
@@ -83,7 +83,7 @@
 
                    </fieldset>
                     <input type="submit" value="Become a Member" class="submitBtn">
-                    <input type="hidden" name="dateAndTime" value="">
+                    <input type="hidden" name="dateAndTime" id="dateAndTime" value="06/12/2023 9:00">
             </form>
 
         </section>
