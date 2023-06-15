@@ -207,4 +207,13 @@ body{
     tr:nth-child(odd) td {
         background-color: gainsboro;
     }
+
+
+    /*------Thank you page-----*/
+
+    .memberConfirmation{
+        display: block;
+        margin: 0 auto;
+        height: 30rem;
+    }
 }

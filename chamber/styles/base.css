@@ -415,6 +415,7 @@ table{
 .memberConfirmation{
     display: block;
     text-align: center;
+    height: 350px;
 }
 
 .memberConfirmation h2 h3{
