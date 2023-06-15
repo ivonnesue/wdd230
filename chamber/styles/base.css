@@ -8,7 +8,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     --accent2-color: #FEC111;
   
     /* change the values below to your chosen font(s) */
-    --heading-font: DM 'Serif Text', serif;
+    --heading-font: 'DM Serif Text', serif;
     --paragraph-font: 'Work Sans', sans-serif;
   
     /* these colors below should be chosen from among your palette colors above */
@@ -409,6 +409,17 @@ table{
     display: none;
 }
 
+
+/*--------Thank you----------*/
+
+.memberConfirmation{
+    display: block;
+    text-align: center;
+}
+
+.memberConfirmation h2 h3{
+    font-family: var(--heading-font);
+}
 
 /*---------Footer-------------*/
 footer{
