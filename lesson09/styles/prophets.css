@@ -6,9 +6,11 @@
 body{
     background-color: #283618;
     line-height: 1.5;
-    margin: 0 auto;
 }
 
+main{
+    margin: 0 auto;
+}
 
 header{
     color: #fefae0;
