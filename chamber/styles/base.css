@@ -422,6 +422,41 @@ table{
     font-family: var(--heading-font);
 }
 
+
+/*---------Directory------------*/
+
+.cards h2{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.cards p{
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+.cards section{
+    margin-bottom: 20px;
+}
+
+.cards a{
+    color: var(--nav-background-color)
+}
+.cards section a:link{
+    text-decoration: none;
+    color:#0B2034
+}
+
+.cards section a:link :hover{
+    color: var(--accent1-color);
+    font-size: 0.2em;
+}
+
+.cards img{
+    border: solid 2px #103E65;
+    border-radius: 5px;
+}
 /*---------Footer-------------*/
 footer{
     display: flex;

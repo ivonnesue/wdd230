@@ -1,0 +1,76 @@
+{
+    "businesses": [
+      {
+        "name": "Food Maxx Marysville",
+        "address": "Lindhurst Avenue Marysville, CA 95901 ",
+        "phone": "(530)749-1050 6000 ",
+        "website": "https://www.foodmaxx.com",
+        "membership": "Gold",
+        "logo": "images/other-logos/foodmaxx.jpg"
+      },
+      {
+        "name": "Farmers Insurance Agent - Maggie Capitano",
+        "address": "621 B St Marysville, CA 95901",
+        "phone": "(530)743-1510",
+        "website": "http://www.farmersagent.com/mcapitano",
+        "membership": "Bronze",
+        "logo": "images/other-logos/farmersins.jpg"
+      },
+      {
+        "name": "McNally Appliances, Marysville",
+        "address": "119 D St Marysville, CA 95901",
+        "phone": "(530)742-5101",
+        "website": "http://www.mcnallyappliances.com",
+        "membership": "Silver",
+        "logo": "images/other-logos/mcnally.jpg"
+      },
+      {
+        "name": "Recology Yuba-Sutter",
+        "address": "3001 N Levee Rd PO Drawer G Marysville, CA 95901",
+        "phone": "(530)749-4220",
+        "website": "https://www.recology.com",
+        "membership": "Gold",
+        "logo": "images/other-logos/recologyYS.jpg"
+      },
+      {
+        "name": "River Valley Community Bank",
+        "address": "904 B St Marysville, CA 95901",
+        "phone": "(530)645-5050",
+        "website": "http://www.myrvcb.com",
+        "membership": "Silver",
+        "logo": "images/other-logos/rivervalleyCB.jpg"
+      },
+      {
+        "name": "BLUE STAR XPRESS WASH",
+        "address": "1009 B Street Marysville, CA 95901",
+        "phone": "(530)645 7410 ",
+        "website": "https://www.bluestarxpresswash.com",
+        "membership": "Bronze",
+        "logo": "images/other-logos/bluestar.jpg"
+      },
+      {
+        "name": "Adventist Health and Ridout  ",
+        "address": "726 4th St, Marysville, CA 95901",
+        "phone": "(530)749-4300",
+        "website": "https://www.adventisthealth.org/rideout/",
+        "membership": "Silver",
+        "logo": "images/other-logos/adventisthealth.jpg"
+      },
+      {
+        "name": "Creative Designs Company Inc.",
+        "address": "230 9th St, Marysville, CA 95901",
+        "phone": "(530)441-7550",
+        "website": "https://www.cdepoxy.com/", 
+        "membership": "Bronze",
+        "logo": "images/other-logos/creativedesigns.jpg"
+      },
+      {
+        "name": "1 Million Cups Yuba-Sutter",
+        "address": "922 G StreetMarysville, CA 95901",
+        "phone": "(530)870-8779",
+        "website": "http://1millioncups.com/yubasutter",
+        "membership": "Gold",
+        "logo": "images/other-logos/1millioncups.jpg"
+      }
+    ]
+  }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce website project for WDD230
+    BYU-I, by Ivonne Ramos."> 
+    <meta name="author" content="Ivonne Sue Aponte R.">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagesf/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Marysville Chamber of Commerce</title>
+</head>
+<body>
+    <div class="banner">
+        <span>🤝🏼 Come join us for the Chamber Meet and Greet, Wednesday at 7:00 p.m.</span>
+        <button id="close-button"><span>❌</span></button>
+    </div>
+    <header>
+        <div class="logobox">
+            <img id="logoimage"
+            src="images/logocolor.png" alt="Maryville Chamber logo">
+        </div>
+        <div class="title-box">
+            <h1>Welcome to the Marysville Chamber of Commerce</h1>
+            <q>Marysville, The Oldest Little City in California</q>
+        </div>
+        
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="images/linkedin.png" alt="linkedin icon"></a>
+        </div>
+    </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>        
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li class="active"><a href="directory.html">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="date">
+        <span id="date">Tuesday, 16 May 2023</span>
+    </div>
+    <main class="directoryMain">
+        <div class="displayOptions">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <div class="cards"></div>
+    </main>
+    <footer>
+
+        <div class="logo-footer">
+            <img src="images/logo-light.png" alt="Marysville Chamber logo light color">
+            <a href="index.html"></a>
+        </div>
+        
+        <div class="address">
+            <p>922 G St, <br> Marysville, CA 95901</p>
+            <p><span> 
+                <a href="https://goo.gl/maps/yPFyiWmtrjiKWZiS9" target="_blank"><span class="material-symbols-outlined">map</span></a>
+            </span></p>
+        </div>
+           
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>E-mail: info@marysvillechamber.com <br> 
+                Phone: 530-354-7896
+            </p>
+        </div>
+        <div class="authorBar">
+            <p>&copy;<span id="year"></span> Marysville Chamber of Commerce | Ivonne Aponte | WDD230 Project | Last Updated: <span id = "updated"></span></p>
+        </div>
+
+
+    </footer>
+<script src="scripts/main.js" defer></script>
+<script src="scripts/directory.js" defer></script>
+</body>
+</html>
