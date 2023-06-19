@@ -213,7 +213,21 @@
         grid-column: 1/4;
         grid-row: 2/3;
     }
+
+    /*----------DIRECTORY LIST VIEW------*/
+    .directoryMain{
+        width: 100%
     }
+    .list section{
+        display: grid;
+        grid-template-columns: 375px 200px 150px 140px 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        word-wrap: break-word;
+    }   
+
+
+}
 
 
 

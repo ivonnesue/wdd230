@@ -30,13 +30,12 @@ const displayBusiness = (businesses) => {
       logo.setAttribute('height', '350');
 
       name.textContent = `${business.name}`;
-      address.textContent = `Adresss: ${business.address}`;
-      phone.textContent = `Phone: ${business.phone}`;
+      address.textContent = `${business.address}`;
+      phone.textContent = `${business.phone}`;
       membership.textContent = `Membership: ${business.membership}`;
-      website.textContent = `Website: ${business.website}`;
       website.setAttribute('href', business.website);
-      website.setAttribute('target', 'blank');
-      console.log(website);
+      website.setAttribute('target', '_blank');
+      website.textContent = `${business.website}`;
       
   
       // Append the section(business) with the created elements
@@ -52,3 +51,23 @@ const displayBusiness = (businesses) => {
   } // end of function expression
 
 getData();
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".cards");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("cards");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("cards");
+}
+

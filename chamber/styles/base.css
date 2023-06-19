@@ -309,6 +309,7 @@ main h2, h4{
 }
 .form-section h2{
     text-align: center;
+    font-family: var(--heading-font);
 }
 form{
     max-width: 100%;
@@ -447,6 +448,10 @@ table{
 .displayOptions :hover{
     background-color: var(--accent2-color)
 }
+
+.cards{
+    display: block;
+}
 .cards h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -458,39 +463,47 @@ table{
     text-align: center;
 }
 
-.cards section{
-    margin-bottom: 20px;
-}
-
-.cards a{
-    color: var(--nav-background-color)
-}
-.cards section a:link{
-    text-decoration: none;
-    color:#0B2034
-}
-
-.cards section a:link :hover{
-    color: var(--accent1-color);
-    font-size: 0.2em;
-}
-
 .cards img{
     border: solid 2px #103E65;
     border-radius: 5px;
+    margin: auto calc((100% - 350px)/2);
 }
 
-.cards img:hover{
-    border: solid 3px var(--accent1-color);
-    filter: drop-shadow(5px 5px 5px gray);
+.cards section a{
+    color: var(--paragraph-color-on-white);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
 }
 
+
+.cards section a:hover{
+    color: var(--accent1-color);
+}
 
 
 /*---------Directory List VIEW------------*/
-
-
-
+/*selector list class*/
+.list{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.list section{
+    display: block;
+    padding-bottom: 20px;
+}
+.list section p{
+    line-height: 1;
+}
+.list section a{
+    margin-left: 2%;
+}
+.list img{
+   display: none
+}
+.list section:nth-child(even) {
+	background-color: var(--secondary-color)
+}
 /*---------Footer-------------*/
 footer{
     display: flex;
@@ -510,8 +523,8 @@ footer h3{
 }
 
 
-footer a, a:visited{
-    color: var(--paragraph-background-color)
+footer .address a, .address a:visited{
+    color: #eee
 }
 
 .authorBar{

@@ -230,12 +230,34 @@ body{
     .cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
         column-gap: 30px;
     }
 
+    .cards section{
+        margin-bottom: 25px;
+        background-color: #eee;
+        padding-bottom: 20px;
+    }
     .cards img{
         width: 100%;
         height: auto;
+        margin: 0 auto;
     }
 
+
+    /*--------Directory list view---------*/
+    .list section{
+        display: grid;
+        grid-template-columns: repeat(3, calc(100%/3));
+    }   
+
+    .list section a{
+        overflow-wrap: break-word;
+        text-decoration: none;
+    }
+    .list section a:hover{
+        color: var(--paragraph-color-on-white);
+        font-weight: 600;
+    }
 }
