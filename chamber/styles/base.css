@@ -423,8 +423,30 @@ table{
 }
 
 
-/*---------Directory------------*/
+/*---------Directory GRID VIEW------------*/
+.directoryMain{
+    display: block;
+    margin: 1% auto;
+}
+.directoryMain div{
+    margin-top: 5%;
+    margin-bottom: 5%;;
+}
+.displayOptions{
+    display: flex;
+    justify-content:space-evenly;
+}
+.displayOptions #grid, #list{
+    font-size: 1.8rem; 
+    border-radius:5px;
+    border: solid 2px gray;
+    padding: 5px;
+    text-align: center;
+}
 
+.displayOptions :hover{
+    background-color: var(--accent2-color)
+}
 .cards h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -457,6 +479,18 @@ table{
     border: solid 2px #103E65;
     border-radius: 5px;
 }
+
+.cards img:hover{
+    border: solid 3px var(--accent1-color);
+    filter: drop-shadow(5px 5px 5px gray);
+}
+
+
+
+/*---------Directory List VIEW------------*/
+
+
+
 /*---------Footer-------------*/
 footer{
     display: flex;

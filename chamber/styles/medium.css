@@ -216,4 +216,26 @@ body{
         margin: 0 auto;
         height: 30rem;
     }
+
+    /*--------Directory---------*/
+    .directoryMain{
+        display: block;
+    }
+
+
+    .displayOptions{
+        justify-content:center;
+        column-gap: 20px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+
+    .cards img{
+        width: 100%;
+        height: auto;
+    }
+
 }
