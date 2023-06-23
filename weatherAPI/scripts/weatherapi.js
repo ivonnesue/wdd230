@@ -9,8 +9,8 @@ async function apiFetch() {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // this is for testing the call
-        // displayResults(data);
+        //console.log(data); // this is for testing the call
+        displayResults(data);
       } else {
           throw Error(await response.text());
       }
@@ -28,7 +28,8 @@ async function apiFetch() {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
-  
+   
+    
 }
 
   apiFetch();
