@@ -70,9 +70,16 @@
             </div>
         </section>
         <section class="weather">
-            <img src="images/weather-02.png" alt="sunny">
-            <div class="text-box" ><h2>Weather</h2>
-                <p>85°F <br> Sunny</p></div>
+            <!--<img src="images/weather-02.png" alt="sunny">-->
+            <div class="text-box" ><h2>Weather in Marysville, CA</h2>
+                <p><span id="current-temp"></span> &deg;F</p>
+                <figure>
+                    <img src="" alt="" id="weather-icon"/>
+                    <figcaption>conditions</figcaption>
+                </figure>
+                <p>Wind Speed:<span id="windSpeed"></span></p>
+                <p> Wind Chill: <span id="windChill"></span></p>
+            </div>
         </section>
         <section class="news">
             <h2>News Release</h2>
@@ -128,6 +135,8 @@
 
 
     </footer>
-<script src="scripts/main.js"></script>
+<script src="scripts/main.js" defer></script>
+<script src="scripts/weather.js" defer></script>
+<script src="scripts/windchill.js"></script>
 </body>
 </html>
