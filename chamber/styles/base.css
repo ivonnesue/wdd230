@@ -234,9 +234,7 @@ main h2, h4{
 /*.event p*/
 
 /*3 Weather*/
-.weather {
-    display: block;
-}
+
 .weather .text-box{
     display: grid;
     align-items: center;
@@ -247,15 +245,7 @@ main h2, h4{
     color: #fff;
 
 }
-.weather #weather-icon{
-    margin-left: 10%;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    padding: 10px;
-    max-height: 170px;
-    max-width: 170px;
-    filter: drop-shadow(5px 5px 6px  #2d8cf1);
-}
+
 
 .weather h2{
     font-family: var(--heading-font);
@@ -266,7 +256,14 @@ main h2, h4{
     font-size: 2em;
     grid-column: 2/3; 
 }
-
+#weather-icon{
+    margin-left: 10%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-height: 170px;
+    max-width: 170px;
+    filter: drop-shadow(5px 5px 6px  #2d8cf1);
+}
 
 /*4. News*/
 
