@@ -14,6 +14,5 @@ function windchill(){
     }
     
     windChill.innerHTML +=  `${formula} mph;`
-    
-    
+     
 }
