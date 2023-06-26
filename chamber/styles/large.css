@@ -97,9 +97,12 @@
         margin: 0 auto;
     }
     .weather{
-        height: auto;
         grid-column: 1/2;
         grid-row: 2/3;
+        height: 250px;
+    }
+    .weather .text-box{
+        height: 100%;
     }
     .news{
         height: auto;

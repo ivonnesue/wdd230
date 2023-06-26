@@ -27,9 +27,26 @@ async function apiFetch() {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
-    windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0)}</strong>`;
+    windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0)}</strong> mph`;
     
 
 }
   apiFetch();
 
+  function windchill(){
+    const temp = currentTemp.innerText;
+    const speed = windSpeed.innerHTML;
+    const windchill = document.getElementById("windChill");
+        
+    if(temp <= 50 && speed > 3){
+      let formula = 35.74 + (0.6215 * temp) - 35.75 * Math.pow(wind, 0.16) + 0.4275 * temp * Math.pow(wind,0.16);
+      formula = formula.toFixed(2)
+   }
+   
+   else{
+       formula = "N/A";
+   }
+   windchill.innerHTML = `${formula}`;
+  }
+
+  windchill()
