@@ -236,7 +236,6 @@ main h2, h4{
 /*3 Weather*/
 
 .weather{
-    margin-bottom: 20px;
     height: 250px;
 }
 .weather .text-box{
@@ -245,7 +244,7 @@ main h2, h4{
     grid-template-columns: 50% 50%;
     grid-template-rows: 65px 100px 65px;
     background-color: var(--secondary-color);
-   
+    height: 100%;
     color: #fff;
   
 }
