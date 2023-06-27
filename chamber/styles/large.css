@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64rem){
+@media only screen and (min-width: 60rem){
    
         /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
     html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
@@ -35,7 +35,11 @@
         line-height: 1.5;
         margin: 0 auto;
     }
-    nav button{
+
+    header{
+        flex-wrap: wrap;
+    }
+    #hamburgerBtn{
         display: none;
     }
 

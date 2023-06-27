@@ -27,13 +27,13 @@
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-body{
+    body{
     font-family: var(--paragraph-font);
     font-weight: normal; 
     line-height: 1.5;
     margin: 0 auto;
   
-}
+    }
    header{
     padding-top: 1%;
     padding-bottom: 1%;

@@ -64,19 +64,21 @@ body{
     background-color: white;
   }
 /*----------Header--------------*/
-header, main, footer{
-    padding: 3%;
-}
+
 header {
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0 auto; 
 }
-header #logoimage {
-  max-width: 150px;
+
+header #logoimage{
+    max-width: 150px;
 }
 .social{
+   
     display:flex;
     justify-content: end;
     align-items: end;
@@ -87,41 +89,53 @@ header #logoimage {
 
 .date{
     text-align: center;
+    flex-grow: 1;
     background-color: var(--secondary-color);
     padding-top: 2px;
     padding-bottom: 2px;
     
 }
 /*--------navigation------------*/
-nav button{
-    margin: .2rem 2vw;
-    background: transparent;
-    border: none;
-    font-size: 2rem;
-    color: var(--paragraph-color-on-color);
-}
 nav{
     background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
 }
-
+header .logobox{
+    margin-left: 8%;
+    background-color: #fff ;
+}
+#hamburgerBtn{
+    margin: 5px 5px 10px;
+    background: var(--primary-color);
+    border: none;
+    font-size: 2rem;
+    color:  #EEF6FC;
+    border-radius: 5px;
+    
+}
 
 nav ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 nav ul li a{
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
+    text-align: center;
     color: var(--paragraph-color-on-color);
     border-top: 1px solid rgba(219, 233, 248, 0.5);
     
 }
 nav ul li.active a {
     background-color: var(--accent1-color) ;
-    color: #fff
+    color: #f6f6f6
 }
 
 nav ul li a:hover{
