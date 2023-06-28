@@ -84,7 +84,12 @@ header #logoimage{
     align-items: end;
 }
 .title-box{
-    display: none;
+    display: block;
+    text-align: center;
+}
+
+.title-box h1{
+    font-family: var(--heading-font)
 }
 
 .date{
@@ -105,7 +110,7 @@ nav{
 }
 header .logobox{
     margin-left: 8%;
-    background-color: #fff ;
+    /*background-color: #fff*/ ;
 }
 #hamburgerBtn{
     margin: 5px 5px 10px;
@@ -127,6 +132,7 @@ nav ul{
 nav ul li a{
     display: block;
     padding: .8rem 2vw;
+    font-size: 1.5em;
     text-decoration: none;
     text-align: center;
     color: var(--paragraph-color-on-color);

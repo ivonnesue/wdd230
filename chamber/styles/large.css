@@ -37,21 +37,45 @@
     }
 
     header{
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #eee;
     }
+   
     #hamburgerBtn{
         display: none;
     }
+    nav{
+        width: auto;
+        order: 0;
+    }
+    header .social{
+        order: 1;
+    }
+    header .date{
+        flex-direction: column;
+        order:2;
+        width: 100%;
 
+    }
     nav ul#primaryNav{
         display: flex;
         /*margin-left: 2vw;*/
         border-top: none;
         justify-content: center;
     }
+    nav ul li{
+        justify-content: center;
+        align-items: center;
+      
+    }
     nav ul li a{
         border: none;
         border-right: none;
+        text-align: center;
+       
+        
     }
 
    main{
