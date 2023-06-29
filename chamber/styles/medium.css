@@ -31,7 +31,7 @@
     font-family: var(--paragraph-font);
     font-weight: normal; 
     line-height: 1.5;
-    margin: 0 auto;
+  
   
     }
    header{
@@ -54,9 +54,10 @@
 
     main{
         display: grid;
+        max-width: 100%;
         grid-template-columns: 1fr 1fr; 
-        column-gap: 10px;
-        row-gap: 20px;
+        column-gap: 5%;
+        row-gap: 5%;
         grid-template-rows: repeat(5, 230px);
         margin-bottom: 20px;
     }

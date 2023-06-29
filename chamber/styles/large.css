@@ -33,7 +33,7 @@
         font-family: var(--paragraph-font);
         font-weight: normal; 
         line-height: 1.5;
-        margin: 0 auto;
+       
     }
 
     header{
@@ -84,6 +84,7 @@
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: repeat(3, 250px);
         column-gap: 10px;
+        row-gap: 10px;
     }
 
     .hero{
@@ -237,7 +238,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        column-gap: 30px;
+        column-gap: 1%;
     }
 
     footer .h2{
