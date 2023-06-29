@@ -276,6 +276,9 @@
         word-wrap: break-word;
     }   
 
+    footer{
+        max-width: 1280px;
+    }
 
 }
 
