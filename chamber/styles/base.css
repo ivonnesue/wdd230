@@ -340,6 +340,11 @@ main h2, h4{
     display: none;
 }
 
+
+/*----------Discover Main---------*/
+.discover div picture img{
+    width: 95%;
+}
 /*---------Form--------------*/
 .form-section{
     margin: 0 auto;

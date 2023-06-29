@@ -74,8 +74,7 @@
         border: none;
         border-right: none;
         text-align: center;
-       
-        
+ 
     }
 
    main{
@@ -176,7 +175,23 @@
         border: 1px solid lightgrey;
         border-radius: 5px;
     }
-
+    /*******DISCOVER MAIN*******/
+    .discover{
+        display: block;
+        margin: 0 auto;
+    }
+    .discover h2{
+        text-align: center;
+    }
+    .discover div{
+        margin: 0 auto;
+        display: block;
+        align-items: center;
+    }
+    .disover div picture img{
+        margin: 0 auto;
+        width: 96%;
+    }
     /*----JOIN MAIN-------*/
     .joinMain{
         display: grid;
