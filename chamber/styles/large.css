@@ -29,7 +29,7 @@
     /*----------- apply a natural box layout model to all elements --------------*/
     * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
     body{
-        max-width: 100%;
+        max-width: 1280px;
         font-family: var(--paragraph-font);
         font-weight: normal; 
         line-height: 1.5;
@@ -190,7 +190,7 @@
     }
     .disover div picture img{
         margin: 0 auto;
-        max-width: 1280px;
+        max-width: 95%;
     }
     /*----JOIN MAIN-------*/
     .joinMain{
