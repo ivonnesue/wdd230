@@ -40,11 +40,11 @@
         </div>
         <nav>
             <ul id="primaryNav">
-                <li ><a href="index.html">Home</a></li>
-                <li class="active"><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="date">
@@ -62,11 +62,17 @@
             <a id="joinBtn" href="join.html">Join</a>
         </div>
         <section class="event">
-            <img class="event-img" src="images/diamond-shack2.jpg" alt="event photo">
-            <div class="text-box">
-                <h2>Ribbon Cutting</h2>
-                <h3>The Diamond Shack</h3>
-                <p>Join us for the grand opening of the Diamond Shack, Thursday at 1:00 p.m.</p>
+            <picture class="event-picture">
+                <source media="(max-width:559px )" srcset="images/peachfest320-02.jpg">
+                <source media="(max-width:700px )" srcset="images/peachfest250x250-03.jpg">
+                <source media="(max-width:960px)" srcset="images/peachfest320-02.jpg">
+                <source media="(max-width:1280px )" srcset="images/peachfest250x250-03.jpg">
+                <img id="event-img" src="images/peachfest315.jpg" alt="event photo"> 
+            </picture>
+            <div class="event-text">
+                <h3>Marysville Peach Festival</h3>
+                <p>July 14-15, 2023 <br>
+                Historic Downtown Marysville</p>
             </div>
         </section>
         <section class="weather">

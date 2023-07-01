@@ -15,7 +15,7 @@ const options = {
     year:"numeric"
 };
 
-let today = new Date().toLocaleDateString("en-UK,options");
+let today = new Date().toLocaleDateString("en-UK",options);
 
 document.querySelector("#date").textContent = today;
 

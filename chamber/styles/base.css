@@ -86,6 +86,7 @@ header #logoimage{
 .title-box{
     display: block;
     text-align: center;
+    margin: 2% 0 2%;
 }
 
 .title-box h1{
@@ -109,7 +110,7 @@ nav{
     
 }
 header .logobox{
-    margin-left: 8%;
+    margin-left: 5%;
     /*background-color: #fff*/ ;
 }
 #hamburgerBtn{
@@ -233,30 +234,36 @@ main h2, h4{
 
 /*2. Event*/
 .event{
-    
+    position: relative;
     display: block;
-    overflow: auto; 
+    overflow: hidden; 
     /*justify-content: center;*/
 }
-.event-img{
-    margin-top: 12px;
-    max-height: 80%;
-    padding: 10px;
-    float: left;    
-}
-.text-box > h2, h3{
-    line-height: 1;
-    letter-spacing: 0.3mm;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0px;
+#event-img{
+    /*margin-top: 12px;*/
+    width: 100%;
+
 }
 /*.event p*/
+.event-text{
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(244, 226, 212, 0.632);
+    /*opacity: 0.7;*/
+    padding: 5px;
+    color: #402B2F;
+    filter: drop-shadow(0 5px 5px #402B2F)
+}
 
 /*3 Weather*/
 
 .weather{
     height: 250px;
+    margin-bottom: 20px;
 }
 .weather .text-box{
     display: grid;
