@@ -76,7 +76,13 @@
         grid-row: 5/6;
     }
 
-    /*****weather*****/
+    /************Discovery************/
+
+    .discover{
+        display: block;
+    }
+
+    /**************weather************/
     .weather{
         grid-column: 2/3;
         grid-row: 5/6;

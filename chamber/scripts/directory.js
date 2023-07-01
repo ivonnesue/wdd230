@@ -26,7 +26,7 @@ const displayBusiness = (businesses) => {
       logo.setAttribute('src', business.logo);
       logo.setAttribute('alt', `logo of ${business.name} ${[business]}`);
       logo.setAttribute('loading', 'lazy');
-      logo.setAttribute('width', '300px');
+      logo.setAttribute('width', '100%');
       logo.setAttribute('height', 'auto');
 
       name.textContent = `${business.name}`;
