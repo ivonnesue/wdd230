@@ -21,33 +21,34 @@
     <title>Marysville Chamber of Commerce</title>
 </head>
 <body>
+    <div class="banner">
+        <span>🤝🏼 Come join us for the Chamber Meet and Greet, Wednesday at 7:00 p.m.</span>
+        <button id="close-button"><span>❌</span></button>
+    </div>
     <header>
         <div class="logobox">
-            <img id="logoimage"
-            src="images/logocolor.png" alt="Maryville Chamber logo">
+            <a href="index.html" >
+                <img id="logoimage" src="images/logocolor.webp" alt="Maryville Chamber logo">
+            </a>
         </div>
-        <div class="title-box">
-            <h1>Welcome to the Marysville Chamber of Commerce</h1>
-            <q>Marysville, The Oldest Little City in California</q>
-        </div>
-        
         <div class="social">
             <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/facebook.png" alt="facebook icon"></a>
             <a href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="images/linkedin.png" alt="linkedin icon"></a>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>        
+        </div>
+        <nav>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li class="active"> <a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date">
+            <span id="date">Tuesday, 16 May 2023</span>
         </div>
     </header>
-    <nav>
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>        
-        <ul id="primaryNav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li class="active"><a href="join.html">Join</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="date">
-        <span id="date">Tuesday, 16 May 2023</span>
-    </div>
     <main class="memberConfirmation">
         <h2>Chamber Membership Application</h2>
         <h3>Thank you!</h3>
