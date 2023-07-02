@@ -80,12 +80,8 @@
         padding: 0;
     }
 
-    /************Discovery************/
 
-    .discover{
-        display: block;
-    }
-
+  
     /**************weather************/
     .weather{
         grid-column: 2/3;
@@ -169,7 +165,57 @@
         align-content: center;
     }
 
+    /************Discover************/
+
+    .discover{
+        display:block;
+    
+
+    }
+   
+    .discover .summary{
+        grid-column: 1/3;
+    }
+    figcaption{
+        text-align: center;
+    }
+    
+   .photo1, .photo2, .photo3, .photo4, .photo5, .photo6{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2%;
+        margin-bottom: 20px;
+        background-color: transparent;
+    }
+     h3{
+        margin-left: 10px;
+    }
+    .photo1 img{
+        grid-column: 1/2;
+    }
+
+    .photo1-info, .photo3-info, .photo5-info{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-color: #eee;
+    }
+
+    .photo2 img, .photo4 img, .photo6 img{
+        grid-column: 2/3;
+        
+    }
+    .photo2-info, .photo4-info, .photo6-info{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: #eee;
+    }
+
+    .photo3 img, .photo5 img{
+        grid-column: 1/2
+    }
     /*join page settings*/
+
+  
 
     .joinMain{
         display: block;
@@ -284,6 +330,21 @@
         color: var(--paragraph-color-on-white);
         font-weight: 600;
     }
+
+    /*-------------Contact----------------------*/
+    .contactInfo{
+        margin: 0;
+    }
+
+    .contactInfo img{
+        width: 100vw;
+    }
+
+    .contactInfo .text{
+        text-align: center;
+        padding: 2% 0;
+    }
+    
 
     /********Footer********/
     footer{

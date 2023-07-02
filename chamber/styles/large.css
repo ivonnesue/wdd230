@@ -116,11 +116,7 @@
         overflow: hidden;
        
     }
-    .event-text{
-        background-color:rgba(244, 226, 212, 0.632);
-        filter: drop-shadow(0 0 0 transparent);
 
-    }
    
     #event-img{
         object-fit: contain; /*object-position: 0;*/
@@ -196,6 +192,14 @@
     .disover div picture img{
         margin: 0 auto;
         max-width: 95%;
+    }
+    .discover .summary{
+        background-color: transparent;
+    }
+    .discover div{
+        background-color: #eee;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
     }
     /*----JOIN MAIN-------*/
     .joinMain{
@@ -281,6 +285,30 @@
         word-wrap: break-word;
     }   
 
+    /*------------Contact-----------*/
+    .contact-main{
+        max-width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        
+    }
+
+    .contactInfo{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0 auto;
+    }
+
+    .contactInfo img{
+        width: 100%;
+    }
+    .contactInfo .text{
+        text-align: left;
+        padding: 5% 0 
+    }
+    
+    /******Footer*****/
     footer{
         max-width: 1280px;
     }
