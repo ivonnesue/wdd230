@@ -1,3 +1,10 @@
+function toggleMenu(){
+  document.getElementById("menubar").classList.toggle("open");
+  document.getElementById("hamburgerBtn").classList.toggle("open")
+}
+const x = document.getElementById('hamburgerBtn')
+x.onclick = toggleMenu; 
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
