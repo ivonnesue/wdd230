@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boutiful Food's is the best spot in Southern California
+    to get organic local produce, order your custom drinks, always fresh and convenient!
+    Come visit us at our store in Carlsbad, CA, and our foodtrucks locations">
+    <link rel="stylesheet" href="https://use.typekit.net/rlx1pjo.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!--add any other links needed-->
+    <title>Boutiful Foods Home</title>
+</head>
+<body>
+    <header>
+        <!--header info-->
+        <div class="logobox">
+            <a href="index.html">
+                <img id="logo" src="images/logo.webp" alt="Bountiful Foods logo">
+            </a>
+        </div>
+        <div class="social">
+            <!--add correct links and icons-->
+            <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/fb.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="linkedin" src="images/instagram.png" alt="linkedin icon"></a>
+            <a href="https://www.tiktok.com" target="_blank"><img class="linkedin" src="images/tiktok.png" alt="linkedin icon"></a>
+        </div>
+        <button id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
+        <nav>
+            <ul id="menubar">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <!--add image sources here-->
+                <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                    <div class="myslide fade">
+                      <div class="numbertext">1 / 3</div>
+                      <source media="(min-width:230px)" srcset="images/tinified/home640.jpg">
+                      <source media="(min-width:768px)" srcset="images/tinified/home1280.jpg">
+                      <source media="(min-width:1280px)" srcset="images/tinified/home1920.jpg">
+                      <img src="images/tinified/home640.jpg" alt="home image1">
+                      <div class="text">Caption Text</div>
+                    </div>
+                  
+                    <div class="myslide">
+                      <div class="numbertext fade">2 / 3</div>
+                      <source media="(min-width:230px)" srcset="images/tinified/yellow640.jpg">
+                      <source media="(min-width:768px)" srcset="images/tinified/yellow1280.jpg">
+                      <source media="(min-width:1280px)" srcset="images/tinified/yellow1920.jpg">
+                      <img src="images/tinified/yellow640.jpg">
+                      <div class="text">Caption Two</div>
+                    </div>
+                  
+                    <div class="myslide">
+                      <div class="numbertext fade">3 / 3</div>
+                      <source media="(min-width:230px)" srcset="images/tinified/green640.jpg">
+                      <source media="(min-width:768px)" srcset="images/tinified/green1280.jpg">
+                      <source media="(min-width:1280px)" srcset="images/tinified/green1920.jpg">
+                      <img src="images/tinified/green640.jpg">
+                      <div class="text">Caption Three</div>
+                    </div>
+                  
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </picture>
+            <button id="heroButton"></button>
+        </section>
+        <section class="location1">
+            <picture>
+                <!--add image sources here-->
+            </picture>
+            <div class="description1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
+                    a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
+                    ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
+                    Proin non nunc lacinia, porta urna vitae, vestibulum sapien.</p>
+            </div>
+        </section>
+        <section class="location2">
+            <picture>
+                <!--add image sources here-->
+            </picture>
+            <div class="description2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
+                    a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
+                    ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
+                    Proin non nunc lacinia, porta urna vitae, vestibulum sapien.</p>
+            </div>
+        </section>
+        <section class="location3">
+            <picture>
+                <!--add image sources here-->
+            </picture>
+            <div class="description3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
+                    a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
+                    ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
+                    Proin non nunc lacinia, porta urna vitae, vestibulum sapien.</p>
+            </div>
+        </section>
+        <section class="weather">
+            <div class="currentWeather">Current weather</div>
+            <div class="forecast1">Day1</div>
+            <div class="forecasts2">Day2</div>
+            <div class="forecast3">Day3</div>
+        </section>
+        <div id="drinks">
+            <p>You have ordered drinks <span id="numOfDrinks"></span></p>
+        </div>
+    </main>
+    <footer>
+        <div class="logobox">
+            <a href="index.html">
+                <img id="logo" src="images/logo.webp" alt="Bountiful Foods logo">
+            </a>
+        </div>
+        <div class="address">
+            <h3>Bountiful Foods Store</h3>
+            <h3>Carlsbad State Farmers Market</h3>
+            <p>2907 State St, Carlsbad, CA, 92008</p>
+        </div>
+        <div class="contact"></div>
+        <div class="authorbar"></div>
+    </footer>
+<!--add scripts-->
+<!--scripts src="scripts/main.js"-->
+<!--scripts src="scripts/weather.js"-->
+<!--scripts src="scripts/drinks.js"-->
+</body>
+</html>
