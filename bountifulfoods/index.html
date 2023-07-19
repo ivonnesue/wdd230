@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <!--font api-->
     <link rel="stylesheet" href="https://use.typekit.net/rlx1pjo.css">
-    <!--add any other links needed-->
+    <!--google materials icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Boutiful Foods Home</title>
 </head>
 <body>
@@ -139,11 +141,21 @@
                 </div>
             </div>
         </section>
-        <section class="weather">
-            <div class="currentWeather">Current weather</div>
-            <div class="forecast1">Day1</div>
-            <div class="forecasts2">Day2</div>
-            <div class="forecast3">Day3</div>
+        <section class="weatherinfo">
+            <div class="weather">
+                <h3>Weather in Carlsbad</h3>
+                <div class="icon-desc">
+                    <span id="description"></span>
+                </div>
+                <p> <strong>Temperature: </strong><span id="temp"></span></p>
+                <p><strong>Humidity: </strong><span id="humidity"></span></p>
+                <p><strong>Wind Speed: </strong><span id="wspeed"></span></p>
+                <p><strong>Windchill: </strong><span id="wchill"></span></p>
+                <div id="forecast">
+                    <h3>Three day Forecast</h3>
+                    <div id="forecast-container">
+                    </div>
+                </div>
         </section>
         <div id="drinks">
             <p>You have ordered drinks <span id="numOfDrinks"></span></p>
@@ -157,15 +169,26 @@
         </div>
         <div class="address">
             <h3>Bountiful Foods Store</h3>
-            <h3>Carlsbad State Farmers Market</h3>
+            <h4>Carlsbad State Farmers Market</h4>
             <p>2907 State St, Carlsbad, CA, 92008</p>
+            <p><span> 
+                <a href="https://goo.gl/maps/whYkErQ7F7enTaWC7" target="_blank"><span class="material-symbols-outlined">location_on</span></a>
+            </span></p>
+            
         </div>
-        <div class="contact"></div>
-        <div class="authorbar"></div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>E-mail: hello@bountifulfoods.com <br> 
+                Phone: 442-354-7896
+            </p>
+        </div>
+        <div class="authorbar">
+            <p>&copy;<span id="year"></span> Bountiful Foods | Ivonne Aponte | WDD230 Project | Last Updated: <span id = "updated"></span></p>
+        </div>
     </footer>
 <!--add scripts-->
 <script src="scripts/main.js"></script>
-<!--script src="scripts/weather.js"-->
+<script src="scripts/weather.js"></script>
 <!--script src="scripts/drinks.js"-->
 </body>
 </html>

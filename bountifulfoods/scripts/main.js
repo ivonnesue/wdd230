@@ -33,3 +33,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+
+//last modified date on footer
+const currentDate = new Date();
+document.querySelector("#year").textContent = currentDate.getFullYear();
+
+let lastUpdate = document.lastModified;
+document.getElementById("updated").innerHTML= lastUpdate;
