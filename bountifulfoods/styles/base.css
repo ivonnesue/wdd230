@@ -1,8 +1,8 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color:  #EF9A31  ;
-    --secondary-color: #06481D ;
+    --primary-color:   #06481D  ;
+    --secondary-color: #EF9A31 ;
     --accent1-color: #026FA3 ;
     --accent2-color: #F15A22;
   
@@ -31,6 +31,7 @@ body{
     font-weight: normal; 
     line-height: 1.5;
     margin: 0 auto;
+    background-color: #FCF6E8;
 }
 /*----------Header-------------------*/
 header {
@@ -47,11 +48,8 @@ header {
 header #logo{
   max-width: 100px;
 }
-.social{
-  display:flex;
-  justify-content: end;
-  align-items: end;
-}
+
+
 
 
 /*---------Header navigation---------------*/
@@ -99,6 +97,25 @@ nav ul li.active a {
   color: #f6f6f6
 }
 
+.social-container{
+  border-top: 1px solid rgba(219, 233, 248, 0.5);
+}
+.social-media{
+  display:flex;
+  justify-content:space-around;
+}
+.social-media a{
+  margin: 8px;
+  padding: 5px;
+  border-top: none;
+  background-color: rgba(251, 244, 244, 0.834);
+  border-radius: 20%;
+}
+.social-media a img{
+  border-top: none;
+  vertical-align: middle;
+
+}
 nav ul li a:hover{
   background-color: var(--accent2-color);
   color: var(--paragraph-color-on-white)
@@ -124,17 +141,45 @@ nav ul.open {display: block;}
 #hamburgerBtn.open span:nth-child(2){
   display: block;
 }
-/*-------- Slideshow container---------- */
-.slideshow-container {
+/*--------Hero Slideshow container---------- */
 
+.hero{
+  position: relative;
+}
+#heroButton{
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width:auto;
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--heading-font);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: 0;
+  filter: drop-shadow(0 5px 5px black )
+}
+
+#heroButton a{
+  text-decoration: none;
+  color:var(--headline-color-on-color);
+}
+
+#heroButton:hover{
+  background-color: var(--accent1-color);
+  color: var(--paragraph-color-on-color);
+}
+
+.slideshow-container {
   max-width: 100vh;
   position: relative;
-  margin: auto;
+  margin: 0 auto;
   overflow-x: auto;
 }
 
-.slideshow-container .myslide img{
+.slideshow-container .myslide .herophotos{
   object-fit: cover;
+  width: 100%;
 }
 
 /* Hide the images by default */
@@ -172,10 +217,12 @@ nav ul.open {display: block;}
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-family: var(--heading-font);
+  filter: drop-shadow(5px 3px 4px black);
+  font-size: 2rem;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 50%;
   width: 100%;
   text-align: center;
 }
@@ -211,4 +258,22 @@ nav ul.open {display: block;}
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/*----------locations/Home main-------------*/
+h1{
+  font-family: var(--heading-font);
+  text-align: center;
+  color: var(--headline-color-on-white)
+}
+.locations{
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.location1, .location2, .location3{
+  padding-bottom: 10%;
+}
+.location1 img, .location2 img, .location3 img{
+  width: 100%;
 }

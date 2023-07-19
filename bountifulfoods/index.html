@@ -23,22 +23,27 @@
                 <img id="logo" src="images/logo.webp" alt="Bountiful Foods logo">
             </a>
         </div>
-        <div class="social">
-            <!--add correct links and icons-->
-            <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/fb.png" alt="facebook icon"></a>
-            <a href="https://www.instagram.com" target="_blank"><img class="instagram" src="images/instagram.png" alt="linkedin icon"></a>
-            <a href="https://www.tiktok.com" target="_blank"><img class="tiktok" src="images/tiktok.png" alt="linkedin icon"></a>
-        </div>
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <nav>
             <ul id="menubar">
                 <li class="active-pg"><a href="index.html">Home</a></li>
                 <li><a href="fresh.html">Fresh</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
+                <li class="social-container">
+                    <div= class="social-media">
+                        <a href="https://facebook.com" target="_blank">
+                            <img class="social" src="images/fb.png" alt="facebook icon"></a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img class="social media" src="images/instagram.png" alt="linkedin icon"></a>
+                        <a href="https://www.tiktok.com" target="_blank">
+                            <img class="social" src="images/tiktok.png" alt="linkedin icon"></a>
+                    </div>
+                    
+                </li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="home">
         <section class="hero">
             <picture>
                 <!--add image sources here-->
@@ -48,16 +53,16 @@
                       <source media="(min-width:230px)" srcset="images/tinified/home640.jpg">
                       <source media="(min-width:768px)" srcset="images/tinified/home1280.jpg">
                       <source media="(min-width:1280px)" srcset="images/tinified/home1920.jpg">
-                      <img src="images/tinified/home640.jpg" alt="home image1">
-                      <div class="text">Caption Text</div>
+                      <img class="herophotos" src="images/tinified/home640.jpg" alt="home image1">
+                      <div class="text">Local Produce</div>
                     </div>
                   
                     <div class="myslide fade">
-                      <source media="(min-width:230px)" srcset="images/tinified/yellow640.jpg">
-                      <source media="(min-width:768px)" srcset="images/tinified/yellow1280.jpg">
-                      <source media="(min-width:1280px)" srcset="images/tinified/yellow1920.jpg">
-                      <img src="images/tinified/yellow640.jpg" alt="home image2">
-                      <div class="text">Caption Two</div>
+                      <source media="(min-width:700px)" srcset="images/tinified/yellow640.jpg">
+                      <source media="(min-width:800px)" srcset="images/tinified/yellow1280.jpg">
+                      <source media="(min-width:1200px)" srcset="images/tinified/yellow1920.jpg">
+                      <img class="herophotos" src="images/tinified/yellow640.jpg" alt="home image2">
+                      <div class="text">Always Fresh</div>
                     </div>
                   
                     <div class="myslide fade">
@@ -65,8 +70,8 @@
                       <source media="(min-width:230px)" srcset="images/tinified/green640.jpg">
                       <source media="(min-width:768px)" srcset="images/tinified/green1280.jpg">
                       <source media="(min-width:1280px)" srcset="images/tinified/green1920.jpg">
-                      <img src="images/tinified/green640.jpg" alt="home image3">
-                      <div class="text">Caption Three</div>
+                      <img class="herophotos" src="images/tinified/green640.jpg" alt="home image3">
+                      <div class="text">and convenient</div>
                     </div>
                   
                     <!-- Next and previous buttons -->
@@ -80,39 +85,58 @@
                     <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
             </picture>
-            <button id="heroButton">Make your drink!</button>
+            <button id="heroButton">
+                <a href="fresh.html">Make your drink!</a>
+            </button>
         </section>
-        <section class="location1">
-            <picture>
-                <!--add image sources here-->
-            </picture>
-            <div class="description1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
-                    a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
-                    ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
-                    Proin non nunc lacinia, porta urna vitae, vestibulum sapien.</p>
+        <section class="locations">
+            <h1>Visit our Food Truck Locations</h1>
+            <div class="location1">
+                <picture>
+                    <source media="(max-width:800px)" srcset="images/vtbridge320.jpg">
+                    <source media="(max-width:2000px)" srcset="images/vtbridge640.jpg">
+                    <img src="images/vtbridge320.jpg" alt="Vincent Thomas Bridge in San Pedro">
+                </picture>
+                <div class="description1">
+                    <h2>San Pedro Coastal Area</h2>
+                    <h3>San Pedro Farmer's Market</h3> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
+                        a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
+                        ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
+                        Proin non nunc lacinia, porta urna vitae, vestibulum sapien.</p>
+                </div>
             </div>
-        </section>
-        <section class="location2">
-            <picture>
-                <!--add image sources here-->
-            </picture>
-            <div class="description2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
-                    a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
-                    ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
-                    Proin non nunc lacinia, porta urna vitae, vestibulum sapien.</p>
+            <div class="location2">
+                <picture>
+                    <source media="(max-width:800px)" srcset="images/sanclemente256.jpg">
+                    <source media="(max-width:2000px)" srcset="images/sanclemente512.jpg">
+                    <img src="images/sanclemente256.jpg" alt="View of San Clemente California">
+
+                </picture>
+                <div class="description2">
+                    <h2>San Clemente Coastal Area</h2>
+                    <h3>San Clemente Farmer's Market</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
+                        a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
+                        ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
+                        Proin non nunc lacinia, porta urna vitae, vestibulum sapien.</p>
+                </div>
             </div>
-        </section>
-        <section class="location3">
-            <picture>
-                <!--add image sources here-->
-            </picture>
-            <div class="description3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
-                    a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
-                    ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
-                    Proin non nunc lacinia, porta urna vitae, vestibulum sapien.</p>
+            <div class="location3">
+                <picture>
+                    <source media="(max-width:800px)" srcset="images/coronadobeach320.jpg">
+                    <source media="(max-width:2000px)" srcset="images/coronadobeach640.jpg">
+                    <img src="images/coronadobeach320.jpg" alt="View of Coronado Beach">
+
+                </picture>
+                <div class="description3">
+                    <h2>Coronado Beach</h2>
+                    <h3>Coronado Beach Certified Farmer's Market</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
+                        a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
+                        ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
+                        Proin non nunc lacinia, porta urna vitae, vestibulum sapien.</p>
+                </div>
             </div>
         </section>
         <section class="weather">
