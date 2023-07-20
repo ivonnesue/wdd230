@@ -1,0 +1,69 @@
+@media only screen and (min-width: 35rem){
+    /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+    :root {
+        /* change the values below to your colors from your palette */
+        --primary-color:   #06481D  ;
+        --secondary-color: #EF9A31 ;
+        --accent1-color: #026FA3 ;
+        --accent2-color: #F15A22;
+      
+        /* change the values below to your chosen font(s) */
+        --heading-font: "aglet-slab", sans-serif;
+        --paragraph-font: "aglet-sans", sans-serif;
+      
+        /* these colors below should be chosen from among your palette colors above */
+        --headline-color-on-white: #4D4D4F;  /* headlines on a white background */ 
+        --headline-color-on-color: #EEF6FC; /* headlines on a colored background */ 
+        --paragraph-color-on-white: #4D4D4F; /* paragraph text on a white background */ 
+        --paragraph-color-on-color: #EEF6FC; /* paragraph text on a colored background */ 
+        --paragraph-background-color: #fff;
+        --nav-link-color: #EEF6FC  ;
+        --nav-background-color: #fff ;
+        --nav-hover-link-color: #06481d ;
+        --nav-hover-background-color: #F15A22;;
+      }
+    
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+    body{
+    font-family: var(--paragraph-font);
+    font-weight: normal; 
+    line-height: 1.5;
+  
+  
+    }
+   header{
+    padding-top: 1%;
+    padding-bottom: 1%;
+   }
+    
+    h1{
+        font-size: 1.5em;
+        margin: 0;
+        font-family: var(--heading-font);
+    }
+    .hero-photo{
+        padding: 1%;
+       
+    }
+
+    .hero-photo::after{
+        content: "";
+        clear: both;
+        display: table;
+         
+    }
+    #heroButton{
+
+        top: 50%;
+        right: 35%;
+    }
+
+
+
+    .location1, .location2, .location3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}

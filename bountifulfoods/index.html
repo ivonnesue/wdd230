@@ -54,43 +54,12 @@
         <section class="hero">
             <picture>
                 <!--add image sources here-->
-                <div class="slideshow-container">
                 <!-- Full-width images with number and caption text -->
-                    <div class="myslide fade">
-                      <source media="(min-width:230px)" srcset="images/tinified/home640.jpg">
-                      <source media="(min-width:768px)" srcset="images/tinified/home1280.jpg">
-                      <source media="(min-width:1280px)" srcset="images/tinified/home1920.jpg">
-                      <img class="herophotos" src="images/tinified/home640.jpg" alt="home image1">
-                      <div class="text">Local Produce</div>
-                    </div>
-                  
-                    <div class="myslide fade">
-                      <source media="(min-width:700px)" srcset="images/tinified/yellow640.jpg">
-                      <source media="(min-width:800px)" srcset="images/tinified/yellow1280.jpg">
-                      <source media="(min-width:1200px)" srcset="images/tinified/yellow1920.jpg">
-                      <img class="herophotos" src="images/tinified/yellow640.jpg" alt="home image2">
-                      <div class="text">Always Fresh</div>
-                    </div>
-                  
-                    <div class="myslide fade">
-                    
-                      <source media="(min-width:230px)" srcset="images/tinified/green640.jpg">
-                      <source media="(min-width:768px)" srcset="images/tinified/green1280.jpg">
-                      <source media="(min-width:1280px)" srcset="images/tinified/green1920.jpg">
-                      <img class="herophotos" src="images/tinified/green640.jpg" alt="home image3">
-                      <div class="text">and convenient</div>
-                    </div>
-                  
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                  <!-- The dots/circles -->
-                <div style="text-align: center;">
-                    <span class="dot" onclick="currentSlide(0)"></span>
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                </div>
+                <source media="(max-width:750px )" srcset="images/tinified/home640.jpg">
+                <source media="(max-width:1024px )" srcset="images/tinified/home1280.jpg">
+                <source media="(max-width:2000px )" srcset="images/tinified/home1920.jpg">
+                <img class="hero-photo" src="images/tinified/home640.jpg" loading="lazy" alt="red orange fruits and vegetables">
+                <div class="text">Local Produce, always fresh and convenient</div>                  
             </picture>
             <button id="heroButton">
                 <a href="fresh.html">Make your drink!</a>
@@ -107,10 +76,14 @@
                 <div class="description1">
                     <h2>San Pedro Coastal Area</h2>
                     <h3>San Pedro Farmer's Market</h3> 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
-                        a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
-                        ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
-                        Proin non nunc lacinia, porta urna vitae, vestibulum sapien.</p>
+                    <p>San Pedro is a neighborhood within the City of Los Angeles, California,
+                         United States. Formerly a separate city, it consolidated with 
+                         Los Angeles in 1909. The Port of Los Angeles, a major international seaport,
+                          is partially located within San Pedro. The district has grown from being
+                          dominated by the fishing industry, to a working-class community within 
+                          the city of Los Angeles, to a rapidly gentrifying community. <br>
+                          Visit our Fruit Truck at San Pedro's Farmers Market, 396 W 6th St, San Pedro, CA 90731
+                         </p>
                 </div>
             </div>
             <div class="location2">
@@ -123,10 +96,17 @@
                 <div class="description2">
                     <h2>San Clemente Coastal Area</h2>
                     <h3>San Clemente Farmer's Market</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
-                        a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
-                        ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
-                        Proin non nunc lacinia, porta urna vitae, vestibulum sapien.</p>
+                    <p>San Clemente is a city in Orange County, California.
+                         It's known for San Onofre and San Clemente state beaches,
+                        with their surf breaks and sandstone bluffs. Running along
+                        the coast, the Beach Trail offers sea views and green parks.
+                        Near T-Street Beach, long San Clemente Pier stretches out 
+                        into the Pacific Ocean. Casa Romantica Cultural Center and
+                         Gardens embodies the city's original Spanish-style architecture.
+                         <br>
+                        Visit our Fruit Truck at San Clemente Farmers Market, 243 Avenida del Mar, 
+                        San Clemente, CA, 92672
+                        </p>
                 </div>
             </div>
             <div class="location3">
@@ -139,10 +119,14 @@
                 <div class="description3">
                     <h2>Coronado Beach</h2>
                     <h3>Coronado Beach Certified Farmer's Market</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
-                        a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
-                        ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
-                        Proin non nunc lacinia, porta urna vitae, vestibulum sapien.</p>
+                    <p>Coronado (Spanish for "Crowned") is a resort city located in San Diego
+                        County, California, United States, across the San Diego Bay from downtown
+                        San Diego.It was founded in the 1880s and incorporated in 1890. 
+                        Swimming, sunbathing, surfing & other outdoor recreation draws crowds
+                        to this scenic, urban beach. <br>
+                        Visit our Fruit Truck at Coronado Certified Farmers Market, 
+                        1st St & B Ave, Coronado, CA 92118
+                    </p>
                 </div>
             </div>
         </section>
@@ -193,7 +177,6 @@
     </footer>
 <!--add scripts-->
 <script src="scripts/main.js"></script>
-<script src="scripts/slides.js"></script>
 <script src="scripts/weather.js"></script>
 <!--script src="scripts/drinks.js"-->
 </body>

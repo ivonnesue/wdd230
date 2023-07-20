@@ -118,7 +118,7 @@ nav ul li.active a {
 }
 nav ul li a:hover{
   background-color: var(--accent2-color);
-  color: var(--paragraph-color-on-white)
+  color: var(--paragraph-color-on-color)
 
 }
 
@@ -141,10 +141,24 @@ nav ul.open {display: block;}
 #hamburgerBtn.open span:nth-child(2){
   display: block;
 }
-/*--------Hero Slideshow container---------- */
+/*--------home main-----------*/
+h1{
+  padding: 5%;
+}
+.home{
+  display: block;
+}
 
 .hero{
   position: relative;
+  height: 640px;
+}
+.hero-photo{
+  width: 100%;
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 #heroButton{
   position: absolute;
