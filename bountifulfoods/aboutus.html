@@ -16,26 +16,31 @@
     <title>About Us</title>
     <body>
         <header>
-            <!--header info-->
-            <div class="logobox">
-                <a href="index.html">
-                <!--img id="logo" scr="images/logo.webp" alt="Bountiful Foods logo"-->
+           <!--header info-->
+        <div class="logobox">
+            <a href="index.html">
+                <img id="logo" src="images/logo.webp" alt="Bountiful Foods logo">
             </a>
-            </div>
-            <div class="social">
-                <!--add correct links and icons-->
-                <!--<a href="https://facebook.com" target="_blank"><img class="facebook" src="images/facebook.png" alt="facebook icon"></a>
-                <a href="https://www.instagram.com" target="_blank"><img class="linkedin" src="images/linkedin.png" alt="linkedin icon"></a>
-                <a href="https://www.tiktok.com" target="_blank"><img class="linkedin" src="images/linkedin.png" alt="linkedin icon"></a>-->
-            </div>
-            <button id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
-            <nav>
-                <ul id="menubar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="fresh.html">Fresh</a></li>
-                    <li class="active"><a href="aboutus.html">About Us</a></li>
-                </ul>
-            </nav>
+        </div>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <nav>
+            <ul id="menubar">
+                <li class="active-pg"><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="social-container">
+                    <div= class="social-media">
+                        <a href="https://facebook.com" target="_blank">
+                            <img class="social" src="images/fb.png" alt="facebook icon"></a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img class="social media" src="images/instagram.png" alt="linkedin icon"></a>
+                        <a href="https://www.tiktok.com" target="_blank">
+                            <img class="social" src="images/tiktok.png" alt="linkedin icon"></a>
+                    </div>
+                    
+                </li>
+            </ul>
+        </nav>
         </header>
         <main>
             <section class="hero">
@@ -46,18 +51,20 @@
             <section class="location1">
                 <div class="history">
                     <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
-                        a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
-                        ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
-                        Proin non nunc lacinia, porta urna vitae, vestibulum sapien.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
-                        a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
-                        ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
-                        Proin non nunc lacinia, porta urna vitae, vestibulum sapien.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat cursus nibh, 
-                        a mollis metus laoreet vel. Suspendisse bibendum tellus at orci euismod hendrerit. Praesent interdum, 
-                        ligula venenatis cursus rhoncus, sem lectus pulvinar risus, et rhoncus augue mi eget enim. 
-                        Proin non nunc lacinia, porta urna vitae, vestibulum sapien.
+                    <p>
+                        Bountiful Foods started 5 years ago when Jane and Joe Wells
+                        began their journey for a healthier lifestyle. Jane found that
+                        making fruit juices was a key routine that helped them reach their
+                        health goals. "We believe in the power that nature has to make you
+                        a healthier and stronger person". We've have always wanted to find
+                        the highest quality local produce, but it was only available at larger
+                        grocery stores farther from neighborhoods and small businesses. 
+                        That is how Bountiful Foods was born. We discovered a need for 
+                        local availability of fresh organic produce. We started small by partnering
+                        with local farmers and now we are growing pretty fast!
+                        We strive to make produce shopping a convenient experience were best
+                        best products are easy to find. Please come visit us at our store and 
+                        food truck locations.
                     </p>
                 </div>
                 <div>
@@ -67,13 +74,15 @@
                 </div>
             <section class="orderform">
                 <h3>Contact Us</h3>
-
                 <h4>Bountiful Foods</h4>
-                <p>address, Carlsbad Californnia</p>
-                <p>Phone: 000-000-0000</p>
-                <p>hello@bountifulfoods.com</p>
+                <p>Carlsbad State Farmers Market</p>
+                <p>2907 State St, Carlsbad, CA, 92008</p>
+                <p>
+                    E-mail: hello@bountifulfoods.com <br> 
+                    Phone: 442-354-7896
+                </p>
 
-                <form method="get" action=""> <!--sent to same page with new section-->
+                <form method="get" action="index.html"> <!--sent to same page with new section-->
                     <fieldset>
                         <legend>Send a message</legend>
                         <label class="top">Name* <input type="text" 
@@ -88,7 +97,8 @@
             </section>
             <section class="map">
                 <H3>Visit Us</H3>
-                <!--add map api here-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106881.50039008915!2d-117.5019713027344!3d33.16039590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc721abd2397a7%3A0xf7a8264165055d05!2sState%20Street%20Farmers%20Market!5e0!3m2!1sen!2sus!4v1689817253802!5m2!1sen!2sus"
+                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
             
         </main>

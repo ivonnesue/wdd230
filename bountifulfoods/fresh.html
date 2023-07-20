@@ -7,12 +7,17 @@
     <meta name="description" content="Boutiful Food's is the best spot in Southern California
     to get organic local produce, order your custom drinks, always fresh and convenient!
     Come visit us at our store in Carlsbad, CA, and our foodtrucks locations">
-    <link rel="stylesheet" href="https://use.typekit.net/rlx1pjo.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">  
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <!--add any other links needed-->
+    <!--font api-->
+    <link rel="stylesheet" href="https://use.typekit.net/rlx1pjo.css">
+    <!--google materials icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Boutiful Fresh</title>
 </head>
 <body>
@@ -20,81 +25,108 @@
         <!--header info-->
         <div class="logobox">
             <a href="index.html">
-            <!--img id="logo" scr="images/logo.webp" alt="Bountiful Foods logo"-->
-        </a>
-        </div>
-        <div class="social">
-            <!--add correct links and icons-->
-            <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/fb.png" alt="facebook icon"></a>
-            <a href="https://www.instagram.com" target="_blank"><img class="linkedin" src="images/instagram.png" alt="instagram icon"></a>
-            <a href="https://www.tiktok.com" target="_blank"><img class="linkedin" src="images/tiktok.png" alt="tiktok icon"></a>
+                <img id="logo" src="images/logo.webp" alt="Bountiful Foods logo">
+            </a>
         </div>
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <nav>
             <ul id="menubar">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="fresh.html">Fresh</a></li>
+                <li class="active-pg"><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
+                <li class="social-container">
+                    <div= class="social-media">
+                        <a href="https://facebook.com" target="_blank">
+                            <img class="social" src="images/fb.png" alt="facebook icon"></a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img class="social media" src="images/instagram.png" alt="linkedin icon"></a>
+                        <a href="https://www.tiktok.com" target="_blank">
+                            <img class="social" src="images/tiktok.png" alt="linkedin icon"></a>
+                    </div>
+                    
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero">
             <picture>
-                <!--add image sources here-->
+                <source media="(max-width: 600px )" srcset="images/tinified/drinksvertical.jpg">
+                <source media="(max-width: 900px )" srcset="images/tinified/freshdrinks1280.jpg">
+                <source media="(max-width: 1024px )" srcset="images/tinified/freshdrinks1920.jpg">
+                <img class="fresh-hero" src="images/tinified/drinksvertical640.jpg" alt="drinks">
             </picture>
         </section>
        <section class="orderform">
             <form method="get" action=""> <!--sent to same page with new section-->
                 <fieldset>
-                    <legend>Contact Information</legend>
-                    <label class="top">First Name* <input type="text" 
-                        name="fname" autocomplete="given-name" required></label>
-                    <label class="top">Email* <input type="email" placeholder="example@email.com" 
-                        name="email" autocomplete="email" required></label>
-                    <label class="top">Phone* <input type="tel" name="phone" placeholder="123-456-7890" 
-                        pattern="\(?\d{3}\)?[-\s]?\d{3}[-\s]?\d{4}?" maxlength="12"
-                        title="Enter digits 0-9, may contain dash(-) or space. No more than 12 characters" autocomplete="tel" required></label>
+                    <legend>Your info</legend>
+                    <label class="top">First Name*<input type="text" name="fname" id="fname" required></label>
+                    <label class="top">Email address*<input type="email" name="email" id="email" placeholder="someone@example.com" required></label>  
+                    <label class="top">Phone*<input type="tel" name="phone" placeholder="123456789" id="phone" required></label>  
                 </fieldset>
                 <fieldset>
-                    <legend>Order</legend>
-                    <p>To make your own drink, choose three fruits and special 
-                        instructions if needed
-                    </p>
-                    <label class="top">Fruit 1 
-                        <select name="fruit">
-                            <option value="">Choose your first fruit</option>
-                        </select>
-                    </label>
-                    <label class="top">Fruit 2 
-                        <select name="fruit">
-                            <option value="">Choose your second fruit</option>
-                        </select>
-                    </label>
-                    <label class="top">Fruit 3 
-                        <select name="fruit">
-                            <option value="">Choose your third fruit</option>
-                        </select>
-                    </label>
-                    <label class="top">Add special instructions
-                        <textarea name="text-box" id="instructions" cols="30" rows="5"></textarea>
-                    </label>
+                    <legend>Create your drink!</legend>
+                    <div class="select-container">
+                        <label for="fruit1">
+                            Select the first fruit!
+                            <select name="fruit1" id="fruit1">
+                                <option value="" disabled selected>Select a fruit</option>
+                            </select>
+                        </label>
+                        <label for="fruit2">
+                            Select the second fruit!
+                            <select name="fruit2" id="fruit2">
+                                <option value="" disabled selected>Select a fruit</option>
+                            </select>
+                        </label>
+                        <label for="fruit3">
+                            Select the third fruit!
+                            <select name="fruit3" id="fruit3">
+                                <option value="" disabled selected>Select a fruit</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label class="top">Additional details? <textarea id="instructions" name="bdescription" cols="33" rows="10" placeholder="Let us make a drink especially for you!"></textarea></label>
                 </fieldset>
-            </fieldset>
-            <input type="submit" value="Make my drink!" class="submitBtn">
-            <input type="hidden" name="dateAndTime" id="dateAndTime" value="06/12/2023 9:00">
+                <div class="button-cont">
+                    <button class="submitBtn">Make my drink!</button>
+                </div>
             </form>
+            <div class="orderInfo">
+            </div>
+        </div>
+    </main>
        </section>
     </main>
     <footer>
-        <div class="logobox"></div>
-        <div class="address"></div>
-        <div class="contact"></div>
-        <div class="authorbar"></div>
+        <div class="logobox">
+            <a href="index.html">
+                <img id="logo" src="images/logo.webp" alt="Bountiful Foods logo">
+            </a>
+        </div>
+        <div class="address">
+            <h3>Bountiful Foods Store</h3>
+            <h4>Carlsbad State Farmers Market</h4>
+            <p>2907 State St, Carlsbad, CA, 92008</p>
+            <p><span> 
+                <a href="https://goo.gl/maps/whYkErQ7F7enTaWC7" target="_blank"><span class="material-symbols-outlined">location_on</span></a>
+            </span></p>
+            
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>E-mail: hello@bountifulfoods.com <br> 
+                Phone: 442-354-7896
+            </p>
+        </div>
+        <div class="authorbar">
+            <p>&copy;<span id="year"></span> Bountiful Foods | Ivonne Aponte | WDD230 Project | Last Updated: <span id = "updated"></span></p>
+        </div>
     </footer>
 <!--add scripts-->
 <script src="scripts/main.js"></script>
 <!--scripts src="scripts/weather.js"-->
-<!--scripts src="scripts/drinks.js"-->
+<script src="scripts/drinks.js"></script>
 </body>
 </html>
